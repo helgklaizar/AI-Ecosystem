@@ -39,7 +39,11 @@ Always use the `view_file` tool before running each stage to read the specific i
 1. Read the file: `.gemini/workflows/audit-judge.md`
 2. Evaluate feature quality, check for fatal vulnerabilities (SQLi/Race Conditions), and write a trace in `.gemini/brain/session_traces.md`.
 
-### Stage 6: Memory Reset / State Save
+### Stage 6: Quality Gate & Git Hooks (Agent Delegation)
+1. **Never commit broken code.** If multiple specialized agents are collaborating (e.g., Frontend Agent and Backend Agent), ensure coordination via Git Hooks.
+2. Run standard pre-commit hooks (linting, testing) automatically. If the hook fails, the Agent must fix the issue before passing the code to the next agent or finalizing the task.
+
+### Stage 7: Memory Reset / State Save
 1. Read the file: `.gemini/workflows/context-compress.md`
 2. Update the codebase status in the root `GEMINI.md`.
 3. Ask the user: "Shall we clear the context (start a new chat) or save the state in memory and continue working here?"

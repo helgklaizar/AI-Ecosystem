@@ -45,7 +45,9 @@ Below is the complete blueprint of the framework. You map these into your global
 │   ├── master.md               # The full CEO -> Engineer -> Developer -> QA Pipeline
 │   ├── adversarial-review.md   # "Devil's Advocate" technical code review mode
 │   ├── feature-interview.md    # Product requirement gathering mode
-│   ├── setup-pare.md           # Instructions to set up MCP structured output
+│   ├── deep-market-research.md # Deep social listening & competitor analysis
+│   ├── ui-prototyping.md       # Programmable UI/Tailwind generation rules
+│   ├── setup-pare.md           # Instructions to set up MCP structured output & openapi-to-cli
 │   └── context-compress.md     # Memory cleanup to prevent hallucinations
 └── skills/                     # 14+ specialized Google-ecosystem AI capabilities
     ├── browser-agent/          # Automated UI verification Subagent
@@ -98,6 +100,8 @@ Interact with your AI using specific slash-commands mapped to the files in `work
 
 - **`/master`** — Bootstraps the full Orchestrator pipeline. The AI acts as your CEO (Idea validation), Engineer (Planning), Coder (Implementation), and QA Judge.
 - **`/feature-interview`** — The AI will ask you precise product-management questions to narrow down a vague idea into concrete requirements.
+- **`/deep-market-research`** — Triggers a parallel social-listening extraction across Reddit/Twitter/HN to validate PM hypotheses.
+- **`/ui-prototyping`** — Forces the AI to bypass raw HTML and generate production-ready Tailwind/React code with proper icons and structured data.
 - **`/adversarial-review`** — Paste your technical/product plan, and the AI will try to destroy it by finding edge cases, security flaws, and architectural bottlenecks before you waste time building it.
 
 ---
