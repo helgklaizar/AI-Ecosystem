@@ -1,16 +1,16 @@
 ---
-description: Questions and initialization workflow when starting a new project
+description: Вопросы и инициализация при старте нового проекта
 ---
 
 // turbo-all
-1. If the user says "Create a new project" or "Scaffold a new backend/frontend" without details — **Stop code generation**. Ask 4 mandatory questions:
-   - **Stack:** What technologies and databases are we using?
-   - **Primary Role / Architecture:** What is the main purpose of the project?
-   - **Red Flags (Constraints):** What am I absolutely forbidden to do?
-   - **Contracts (API / IPC):** Do we need to formalize contracts right away?
-2. Wait for the user's answers.
-3. Only after receiving the answers, perform the scaffold (framework installation).
-4. IMMEDIATELY (before the first commit), create a `GEMINI.md` file in the root, strictly using the template `.gemini/templates/project-index.md`. Fill in the stack, architecture, red flags, and documentation paths. Do not store tasks verbosely in GEMINI.md, only the path to the sprint file.
-5. Create the folder structure `docs/sprints/` and the first weekly sprint file (e.g., `docs/sprints/week-1.md`), where we will write all micro-specs and tasks for the current week. New week = new file.
-6. Refresh the root `README.md`.
-7. Ask the user: "The base is ready. What is the first task we are tossing into the current weekly sprint? Shall we start a `/feature-interview`?"
+1. Если пользователь говорит "Создай новый проект" или "Разверни новый бэкенд/фронт" без деталей — **Останови генерацию кода**. Задай 4 обязательных вопроса:
+   - **Стек:** Какие технологии и базы данных используем?
+   - **Главная роль / Архитектура:** Какое основное назначение проекта?
+   - **Красные флаги (Ограничения):** Чего мне категорически нельзя делать?
+   - **Контракты (API / IPC):** Нужно ли сразу фиксировать контракты?
+2. Дождись ответов пользователя.
+3. Только после получения ответов выполни scaffold (установку шаблона).
+4. СРАЗУ (до первого коммита) создай файл `GEMINI.md` в корне, строго используя новый индексный шаблон `.gemini/templates/gemini-index.md`. Заполни стек, архитектуру, красные флаги и пути к документации. Не храни задачи словесно в GEMINI.md, только путь на файл-спринт.
+5. Создай структуру папок `docs/sprints/` и первый файл недельного спринта (например, `docs/sprints/week-1.md`), куда мы будем писать все микроспеки и задачи текущей недели. Новая неделя = новый файл.
+6. Актуализируй корневой `README.md`.
+7. Спроси пользователя: "База готова. Какую первую задачу кидаем в текущий недельный спринт? Начнем `/feature-interview`?"

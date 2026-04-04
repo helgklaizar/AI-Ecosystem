@@ -4,14 +4,14 @@ description: Rapid UI generation and programmable design
 
 # AI UI Prototyping (Stitch-SDK style)
 
-**When to use:** During frontend development, landing page creation, or UI component design when a rapid, production-ready, and beautiful result is required without manual styling out of the box.
+**Когда использовать:** При разработке фронтенда, посадочных страниц (Landing Pages) или UI-компонентов, когда нужен быстрый и красивый результат без ручной верстки.
 
-## AI Instructions
-1. Never write raw, ugly HTML with default browser styles!
-2. Generate **fully finished, responsive components**.
-3. **Tech Stack:** 
-   - Clean HTML + **Tailwind CSS**.
-   - Do not request external CSS files unless strictly defined by the architecture (rely on Tailwind utility classes).
-   - Inject inline SVG icons (e.g., Lucide) and beautiful placeholder images to achieve an "App Store" quality finish.
-4. **Iterations:** Always output complete blocks (an entire section or page) rather than fragmented divs, allowing the PM or Engineer to visually validate the design instantly.
-5. **Backend Integration:** Design the components with clear separation of structure and state (ready to accept React/Next.js props from an API) without requiring a complete rewrite.
+## Инструкция для ИИ
+1. Не пиши сырой и некрасивый HTML с дефолтными стилями! 
+2. Используй генерацию **абсолютно готовых, адаптивных компонентов**.
+3. **Технологический стек:** 
+   - Чистый HTML + **Tailwind CSS**.
+   - Не используй внешние CSS-файлы, если это не оговорено в архитектуре (пиши utility-классы Tailwind).
+   - Используй иконки (например, SVG внутри HTML или Lucide) и плейсхолдер-изображения для создания законченного "App Store" качества.
+4. **Итерации:** Всегда выдавай целостный блок (целую секцию или страницу), а не куски, чтобы пользователь мог сразу визуально оценить дизайн.
+5. Интеграция с бэкендом: Сразу проектируй компоненты так, чтобы они легко принимали данные из API (props в React/Next.js) без переписывания верстки.

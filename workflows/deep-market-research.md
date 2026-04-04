@@ -1,27 +1,27 @@
 ---
-description: Deep market research and social network analysis before product creation (based on last30days architecture)
+description: Глубокое исследование рынка и анализ соцсетей перед созданием продукта (на базе last30days концепта)
 ---
 
 # Deep Market Research & Trend Analysis
 
-**When to use:** Before drafting the `micro-spec.md` and launching the `plan-ceo.md` stage. Use this to validate hypotheses, analyze competitors, and understand community sentiment.
+**Когда использовать:** Перед составлением `micro-spec.md` и запуском этапа `plan-ceo.md`, когда нужно проверить гипотезу, проанализировать конкурентов или узнать, что обсуждает комьюнити.
 
-## AI Execution Logic (Two-Pass Architecture)
+## Логика работы ИИ (Два прохода)
 
-Act as a deep community researcher, extracting raw insights from non-obvious sources:
+Тебе нужно действовать как скилл `last30days`, вытаскивая информацию из неочевидных источников:
 
-### Pass 1: Broad Sweep
-1. Use the `deep-research`, `browser-agent`, or `search_web` tools.
-2. Execute parallel searches on the product topic covering the last 30-90 days across:
-   - **Reddit** (niche subreddits)
+### Pass 1: Широкий охват
+1. Используй инструмент `deep-research` или `browser-agent` (если доступен), либо поиск `search_web`.
+2. Выполни параллельные запросы по теме продукта за последние 30-90 дней на:
+   - **Reddit** (сабреддиты по теме)
    - **Hacker News (HN)**
    - **X (Twitter) / Bluesky**
-   - **YouTube** (recent reviews and tech talks)
-3. Extract core pain points of current solutions, highly requested features, and primary competitors.
+   - **YouTube** (поиск свежих обзоров)
+3. Извлеки основные претензии пользователей к текущим решениям, популярные фичи и имена главных конкурентов.
 
-### Pass 2: Deep Dive
-4. Take the competitors and key figures found in Pass 1 and execute targeted searches for their flaws (e.g., `product_name issue`, `site:reddit.com/r/product_name complaints`).
-5. If a topic is aggressively discussed across multiple networks, mark it as a **Strong Signal** for implementation in our product.
+### Pass 2: Глубокий дайв
+4. Возьми найденных конкурентов / ключевых экспертов из Pass 1 и сделай целевой поиск по их недостаткам (например: `product_name issue`, `site:reddit.com/r/product_name complaint`).
+5. Если тема агрессивно обсуждается сразу в нескольких сетях — помечай это как **сильный сигнал (Strong Signal)** для реализации в нашем продукте.
 
-### Output:
-Generate a structured Markdown report containing real user quotes (complaints/wishes), source URLs, and 3 to 5 actionable recommendations to be included in our `micro-spec.md`.
+### Итог:
+Выдай структурированный Markdown-отчет с цитатами реальных болей пользователей, ссылками на источники и 3-5 рекомендациями для нашего `micro-spec.md`.

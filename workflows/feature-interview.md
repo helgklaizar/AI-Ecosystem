@@ -1,14 +1,14 @@
 ---
-description: Start a requirement-gathering interview process for a major new feature
+description: Запустить процесс интервью по сбору требований для новой крупной фичи
 ---
 
 // turbo-all
-1. Read the `GEMINI.md` file to understand the project context (if it exists).
-2. Conduct an interview with the user following the Spec-driven development methodology, asking clarifying questions:
-   - What is the primary business goal of this feature? (What should it achieve ultimately).
-   - What is explicitly OUT of scope for this task (Non-goals)?
-   - What are the technical constraints or assumptions (e.g., platforms, libraries, performance targets, UI)?
-   - How will we verify that the feature is done (Acceptance Criteria / Validation Plan)?
-3. Do NOT write code at this stage! Analytics only.
-4. After receiving answers, generate a specification file based on the `.gemini/templates/micro-spec.md` template and save it in `docs/specs/<feature-name>.md`.
-5. Ask the user to approve the specification before starting the implementation.
+1. Прочитать файл `GEMINI.md` для понимания контекста проекта (если он есть).
+2. Провести с пользователем интервью по методологии Spec-driven development, задавая уточняющие вопросы:
+   - Какова главная бизнес-цель этой фичи? (Что должно работать в итоге).
+   - Что точно НЕ входит в рамки этой задачи (Non-goals)?
+   - Какие есть технические ограничения или допущения (например, платформы, библиотеки, скорость работы, UI)?
+   - Как мы будем проверять, что фича готова (План проверок)?
+3. Не писать код на этом этапе! Только аналитика.
+4. После получения ответов, сгенерировать файл спецификации на базе шаблона `.gemini/templates/micro-spec.md` и сохранить его в `docs/specs/<название-фичи>.md`.
+5. Попросить пользователя утвердить спецификацию перед стартом реализации.

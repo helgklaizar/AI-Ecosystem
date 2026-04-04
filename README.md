@@ -14,6 +14,14 @@
 
 ---
 
+## 📢 Latest Release (v2.0 - Local Sync)
+- **Environment Agnosticism**: Replaced absolute local paths with universal relative paths (`~/.gemini/`) across rule sets and workflows for safe, seamless deployment by any user.
+- **Tauri MacOS Automation**: Introduced `tauri-ship.sh` inside `tools/` for automated MacOS App bundle building and DMG generation, integrated directly into agent behavior.
+- **Workflow Consolidation**: Deprecated redundant workflows (`context-compress.md`, `master.md`, `implement.md`, etc.) and refined the core toolkit with new dedicated workflows like `api-integrations.md` and `git-hooks-qa.md`.
+- **Global Rules Refinement**: Enhanced `agent-behavior.md` for safe SQLite data gathering, automatic external link tracking, and rigorous internal QA gate loops.
+
+---
+
 ## 📖 Project Vision & Target Audience
 
 This framework was built with a clear purpose: **empowering Technical Product Managers (PMs) and Founders to build entire digital products autonomously**.

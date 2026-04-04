@@ -1,26 +1,26 @@
-# Specification: [Short and clear feature name]
+# Спецификация: [Короткое понятное название фичи]
 
-## 🎯 Goal
-[Briefly: what are we doing, why does the business/user need it, what problem does it solve?]
+## 🎯 Цель (Goal)
+[Кратко: что делаем, зачем это бизнесу/пользователю, какую проблему решаем?]
 
-## 🚫 Non-Goals (What we are definitively NOT doing)
-[Extremely important! Specify anything that might seem related but is out of scope to prevent the AI from over-engineering.]
-- [ ] Example: We are not adding animations in this step.
-- [ ] Example: No UI tests required yet.
+## 🚫 Non-Goals (Что мы точно НЕ делаем)
+[Крайне важно! Укажи всё, что может показаться связанным, но не входит в текущую задачу, чтобы ИИ не додумал лишнего.]
+- [ ] Например: Не добавляем анимации на этом этапе.
+- [ ] Например: Не пишем тесты на UI.
 
-## 🚧 Constraints & Context
-[Technologies, interfaces, 3rd party APIs, legacy code to consider. Special environment conditions.]
-- [ ] Example: Use only Vanilla CSS, no Tailwind.
-- [ ] Example: The API will return an array of max 100 elements.
+## 🚧 Ограничения и контекст (Constraints & Context)
+[Технологии, интерфейсы, сторонние API, легаси-код, которые нужно учитывать. Особые условия окружения.]
+- [ ] Например: Используем только Vanilla CSS, без Tailwind.
+- [ ] Например: API вернет массив не более 100 элементов.
 
-## ✅ Acceptance Criteria
-[How do we prove the task is 100% complete? Add objectively testable steps.]
-1. When opening page X...
-2. If error Y occurs, then...
+## ✅ План проверок (Acceptance Criteria)
+[Как мы докажем, что задача выполнена на 100%? Желательно объективно проверяемые шаги.]
+1. При открытии страницы X...
+2. Если возникает ошибка Y, то...
 3. ...
 
-## 🛠️ Sub-tasks
-[The spec MUST be broken down into the smallest isolated steps possible.]
-- [ ] Step 1: [Create the interface]
-- [ ] Step 2: [Connect state management]
-- [ ] Step 3: [Integrate with API]
+## 🛠️ Микро-задачи (Sub-tasks)
+[Спека должна быть разбита на максимально мелкие, изолированные шаги.]
+- [ ] Шаг 1: [Создать интерфейс]
+- [ ] Шаг 2: [Подключить стейт]
+- [ ] Шаг 3: [Связать с API]

@@ -1,13 +1,13 @@
 ---
-description: Act as a Devil's Advocate to pressure-test a completed specification or architectural plan.
+description: Выступить в роли "адвоката дьявола" для проверки готовой спецификации или архитектурного плана
 ---
 
 // turbo-all
-1. The user must provide a link to the specification or feature plan.
-2. Your task is NOT to write code, but to act as a senior staff engineer whose sole purpose is to find vulnerabilities, logic gaps, scope creep, and edge cases.
-3. Evaluate the spec against the following criteria:
-   - Coverage: Are the negative scenarios covered (API errors, offline states, bad or empty data)?
-   - Scope Creep: Is the spec trying to do "too much" at once? Can it be broken down into smaller milestones?
-   - Non-goals: Is it clearly stated what we are NOT doing within this task? Are these constraints sufficient?
-   - Testability: Can we objectively test what is described in the Acceptance Criteria?
-4. Critize the plan and provide harsh, direct feedback pointing out exactly what must be fixed or clarified.
+1. Пользователь должен предоставить ссылку на спецификацию или текст плана фичи.
+2. Твоя задача — не писать код, а сыграть роль старшего разработчика, задача которого — найти уязвимости, недочеты, "дыры" в логике и граничные случаи (edge cases).
+3. Оцени спеку по следующим критериям:
+   - Coverage: Покрыты ли негативные сценарии (ошибки API, отсутствие интернета, плохие или пустые данные)?
+   - Scope Creep: Не пытается ли спека сделать слишком много "за один раз"? Можно ли её разбить на более мелкие составляющие?
+   - Non-goals: Чётко ли указано, чего мы НЕ делаем в рамках этой задачи? Достаточно ли этих ограничений?
+   - Testability: Можно ли объективно протестировать то, что описано в Acceptance Criteria?
+4. Раскритиковать и выдать жесткий, прямой фидбек с указанием, что именно нужно исправить или уточнить.
