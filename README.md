@@ -47,16 +47,21 @@ Below is the complete blueprint of the framework. You map these into your global
 │   ├── GEMINI.md               # Core rules and the template for Project Memory
 │   └── agent-behavior.md       # Triggers that stop the AI from blindly coding
 ├── templates/                  # Standardized markdown documents
-│   ├── project-index.md        # To record architectural boundaries and deployment links
+│   ├── gemini-index.md         # To record architectural boundaries and deployment links
 │   └── micro-spec.md           # To document features, Non-Goals, and Acceptance Criteria
+├── tools/                      # Executable scripts and utilities
+│   ├── ai-radar/               # SQLite-based intelligence data tracking
+│   └── tauri-ship.sh           # CI/CD script for automated Tauri MacOS builds
 ├── workflows/                  # Custom multi-step agent routines
-│   ├── master.md               # The full CEO -> Engineer -> Developer -> QA Pipeline
+│   ├── new-project.md          # Workflow to instantiate a new extensible project structure
+│   ├── api-integrations.md     # Architecture rules for strict and tested API development
 │   ├── adversarial-review.md   # "Devil's Advocate" technical code review mode
 │   ├── feature-interview.md    # Product requirement gathering mode
 │   ├── deep-market-research.md # Deep social listening & competitor analysis
 │   ├── ui-prototyping.md       # Programmable UI/Tailwind generation rules
-│   ├── setup-pare.md           # Instructions to set up MCP structured output & openapi-to-cli
-│   └── context-compress.md     # Memory cleanup to prevent hallucinations
+│   ├── git-hooks-qa.md         # Automated QA loops before reporting task completion
+│   ├── pentest-qa.md           # Instructions for performing security audits
+│   └── log-external-source.md  # Automated journaling of outside documentation
 └── skills/                     # 14+ specialized Google-ecosystem AI capabilities
     ├── browser-agent/          # Automated UI verification Subagent
     ├── deep-research/          # External documentation & context research
