@@ -57,7 +57,7 @@ class ChatEngine: ObservableObject {
     // MARK: - Start
 
     func start() async {
-        await botSay("⚡ **GravityHub**\n\nЯ настрою твоё AI-окружение под тебя — агенты, воркфлоу, скиллы, структуру папок.\n\nВсё как надо, с первого раза.")
+        await botSay("⚡ **Configurator**\n\nЯ настрою твоё AI-окружение под тебя — агенты, воркфлоу, скиллы, структуру папок.\n\nВсё как надо, с первого раза.")
         try? await Task.sleep(nanoseconds: 600_000_000)
         await botSay("Как тебя зовут?")
         state = .askName
@@ -335,7 +335,7 @@ class ChatEngine: ObservableObject {
             await runAppUpdate()
 
         case "помощь", "help", "?":
-            await botSay("**Команды:**\n• `статус` — здоровье окружения\n• `обновить` — синхронизация агентов/воркфлоу из GitHub\n• `обновить апп` — проверить новую версию GravityHub\n• `починить` — восстановить файлы\n• `помощь` — эта справка")
+            await botSay("**Команды:**\n• `статус` — здоровье окружения\n• `обновить` — синхронизация агентов/воркфлоу из GitHub\n• `обновить апп` — проверить новую версию Configurator\n• `починить` — восстановить файлы\n• `помощь` — эта справка")
 
         default:
             await botSay("Не понял команду. Напиши `помощь` чтобы увидеть список.")
@@ -393,13 +393,13 @@ class ChatEngine: ObservableObject {
         guard AppUpdater.shared.shouldCheck else { return }
         let result = await AppUpdater.shared.checkForUpdate()
         if case .updateAvailable(let release) = result {
-            await botSay("🆙 **Новая версия GravityHub \(release.version)**\n\n\(release.releaseNotes.prefix(200))...\n\nНапиши `обновить апп` чтобы скачать.")
+            await botSay("🆙 **Новая версия Configurator \(release.version)**\n\n\(release.releaseNotes.prefix(200))...\n\nНапиши `обновить апп` чтобы скачать.")
             quickReplies = [QuickReply(label: "⬇️ Обновить приложение", value: "обновить апп")]
         }
     }
 
     private func runAppUpdate() async {
-        await logSay("🔍 Проверяю новую версию GravityHub...")
+        await logSay("🔍 Проверяю новую версию Configurator...")
         let result = await AppUpdater.shared.checkForUpdate()
         switch result {
         case .upToDate(let v):

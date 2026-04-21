@@ -2,7 +2,7 @@ import Foundation
 import AppKit
 
 // MARK: - App Updater
-// Checks GitHub Releases for new versions of the GravityHub installer app itself.
+// Checks GitHub Releases for new versions of the Configurator installer app itself.
 
 struct AppRelease {
     let version: String        // e.g. "1.2.0"
@@ -41,7 +41,7 @@ class AppUpdater {
 
         var request = URLRequest(url: releasesAPIURL)
         request.setValue("application/vnd.github+json", forHTTPHeaderField: "Accept")
-        request.setValue("GravityHub/\(AppUpdater.currentVersion)", forHTTPHeaderField: "User-Agent")
+        request.setValue("Configurator/\(AppUpdater.currentVersion)", forHTTPHeaderField: "User-Agent")
 
         do {
             let (data, response) = try await URLSession.shared.data(for: request)

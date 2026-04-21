@@ -72,7 +72,7 @@ struct ChatView: View {
             Text("⚡")
                 .font(.system(size: 20))
 
-            Text("GravityHub")
+            Text("Configurator")
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundColor(.white)
 

@@ -51,7 +51,7 @@ class BackupManager {
             **Date:** \(Date().description)
             
             ## What happened?
-            You installed a new GravityHub Profile. To prevent your existing tools and custom configurations from being overwritten or lost, the system automatically moved them to this legacy backup folder.
+            You installed a new Configurator Profile. To prevent your existing tools and custom configurations from being overwritten or lost, the system automatically moved them to this legacy backup folder.
             
             ## Items Backed Up:
             \(backedUpItems.map { "- \($0)" }.joined(separator: "\n"))

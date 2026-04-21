@@ -11,7 +11,7 @@ You get the right agents, workflows, and skills for your profession. Nothing mor
 ## How It Works
 
 ```
-1. Run GravityHub (macOS app)
+1. Run Configurator (macOS app)
 2. Answer 5 questions in a chat:
    └── Name / Profession / Stack / AI Tools / Projects folder
 3. Your environment is configured automatically:
@@ -62,9 +62,9 @@ AI-Ecosystem/
 │   └── tools/
 ├── templates/            ← base templates (GEMINI.md, AGENTS.md, CLAUDE.md)
 │
-└── installer/            ← GravityHub: macOS app that runs the setup
+└── installer/            ← Configurator: macOS app that runs the setup
     ├── Package.swift
-    └── Sources/GravityHub/
+    └── Sources/Configurator/
 ```
 
 ---
@@ -98,7 +98,7 @@ AI Ecosystem is not tied to one tool. During setup you pick what you use:
 
 ---
 
-## GravityHub App (macOS Installer)
+## Configurator App (macOS Installer)
 
 The `installer/` folder contains the Swift macOS app that drives the setup.
 
@@ -107,7 +107,7 @@ The `installer/` folder contains the Swift macOS app that drives the setup.
 - Downloads the right files from this repo for your profession
 - Real-time setup log in chat
 - Auto-updates: checks this repo for new agents/workflows on startup
-- App updater: checks GitHub Releases for new versions of GravityHub itself
+- App updater: checks GitHub Releases for new versions of Configurator itself
 - Commands after setup: `статус`, `обновить`, `починить`
 
 **Build:**
@@ -136,7 +136,7 @@ Key external sources:
 
 ## Updates
 
-This repository is the source of truth for all configs. When you run `обновить` in GravityHub, it pulls the latest agents, workflows, and skills from here and updates your local installation.
+This repository is the source of truth for all configs. When you run `обновить` in Configurator, it pulls the latest agents, workflows, and skills from here and updates your local installation.
 
 ---
 

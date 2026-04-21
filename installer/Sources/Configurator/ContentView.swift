@@ -6,11 +6,11 @@ enum AppScreen {
     case welcome
     case onboarding
     case deploying(profile: UserProfile)
-    case done(profile: UserProfile)
+    case main(profile: UserProfile)
 }
 
 struct AppRootView: View {
-    @State private var screen: AppScreen = .welcome
+    @State private var screen: AppScreen = AppStore.shared.profile != nil ? .main(profile: AppStore.shared.profile!) : .welcome
 
     var body: some View {
         ZStack {
@@ -27,11 +27,11 @@ struct AppRootView: View {
 
             case .deploying(let profile):
                 DeployView(profile: profile) {
-                    screen = .done(profile: profile)
+                    screen = .main(profile: profile)
                 }
 
-            case .done(let profile):
-                DoneView(profile: profile)
+            case .main(let profile):
+                MainAppView(profile: profile)
             }
         }
         .animation(.easeInOut(duration: 0.3), value: screenID)
@@ -42,7 +42,7 @@ struct AppRootView: View {
         case .welcome: return 0
         case .onboarding: return 1
         case .deploying: return 2
-        case .done: return 3
+        case .main: return 3
         }
     }
 }
