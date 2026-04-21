@@ -48,8 +48,9 @@ All professions also receive a base set: `huxley-coder`, `swarm-orchestrator`, `
 
 ```
 AI-Ecosystem/
-├── STRUCTURE.md          ← the standard: what files go where and why
-├── SOURCES.md            ← attribution for all external skills/workflows
+├── base/
+│   ├── STRUCTURE.md      ← the standard: what files go where and why
+│   └── SOURCES.md        ← attribution for all external skills/workflows
 │
 ├── agents/               ← AI agent definitions (.md)
 ├── workflows/            ← global workflow guides (.md)
@@ -81,7 +82,7 @@ Workspace-wide agents available in every project in that folder.
 **Level 3 — Project** (`<project>/`)
 Project-specific files: `GEMINI.md`, `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, `DESIGN.md`, local memory (`brain/`), git.
 
-This structure is defined in [`STRUCTURE.md`](./STRUCTURE.md) and evolves with each version of the app.
+This structure is defined in [`STRUCTURE.md`](./base/STRUCTURE.md) and evolves with each version of the app.
 
 ---
 
@@ -122,7 +123,7 @@ swift run
 
 ## Skill Sources
 
-Skills come from multiple curated sources. See [`SOURCES.md`](./SOURCES.md) for full attribution.
+Skills come from multiple curated sources. See [`SOURCES.md`](./base/SOURCES.md) for full attribution.
 
 Key external sources:
 - [angular/skills](https://github.com/angular/skills) — Angular Team
