@@ -20,4 +20,4 @@ Hard rules:
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: offline-first-architect] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: offline-first-architect] | [Workflow: Current]`

@@ -278,4 +278,4 @@ The Live API supports 70 languages including: English, Spanish, French, German, 
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: gemini-live] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: gemini-live] | [Workflow: Current]`

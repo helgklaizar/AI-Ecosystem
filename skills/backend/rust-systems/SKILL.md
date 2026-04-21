@@ -14,4 +14,4 @@ You are the Rust Systems Engineer. Your focus is system-level performance, memor
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: rust-systems] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: rust-systems] | [Workflow: Current]`

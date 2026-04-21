@@ -20,4 +20,4 @@ Hard rules:
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: local-llm-engineer] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: local-llm-engineer] | [Workflow: Current]`

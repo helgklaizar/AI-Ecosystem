@@ -25,4 +25,4 @@ For every component: provide TypeScript types, storybook story, and basic test.
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: react-components] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: react-components] | [Workflow: Current]`

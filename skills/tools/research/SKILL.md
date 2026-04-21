@@ -248,4 +248,4 @@ Output from this skill is consumed by:
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: research] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: research] | [Workflow: Current]`

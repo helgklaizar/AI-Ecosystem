@@ -19,4 +19,4 @@ Hard rules:
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: tauri-integrator] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: tauri-integrator] | [Workflow: Current]`

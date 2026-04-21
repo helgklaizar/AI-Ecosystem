@@ -26,4 +26,4 @@ Include: CVE references where applicable, remediation steps.
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: security-auditor] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: security-auditor] | [Workflow: Current]`

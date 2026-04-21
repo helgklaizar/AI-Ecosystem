@@ -14,4 +14,4 @@ You are the Bot & Async Integrator. You implement complex Telegram bots using ai
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: bot-integrator] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: bot-integrator] | [Workflow: Current]`

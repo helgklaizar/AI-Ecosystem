@@ -14,4 +14,4 @@ You are the Agent Debugger. You DO NOT write new features or tests. Your ONLY go
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: debugger] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: debugger] | [Workflow: Current]`

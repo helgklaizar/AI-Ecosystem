@@ -14,4 +14,4 @@ You are the Python Async Backend Developer. You design lightning-fast microservi
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: python-async] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: python-async] | [Workflow: Current]`

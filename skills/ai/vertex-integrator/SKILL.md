@@ -260,4 +260,4 @@ Depending on the specific user request, refer to the following reference files f
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: vertex-integrator] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: vertex-integrator] | [Workflow: Current]`

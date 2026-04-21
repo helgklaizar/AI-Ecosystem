@@ -14,4 +14,4 @@ You are the Database Architect. You design efficient schemas, write robust migra
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: db-architect] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: db-architect] | [Workflow: Current]`

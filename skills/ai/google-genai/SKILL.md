@@ -456,4 +456,4 @@ These pages cover function calling, built-in tools (Google Search, code executio
 
 ## 🔄 System Context Enforcement
 When using this skill, immediately output the following line before providing your answer:
-`🔄 **Контекст:** [Агент: Current] | [Скилл: google-genai] | [Воркфлоу: Current]`
+`🔄 **Context:** [Agent: Current] | [Skill: google-genai] | [Workflow: Current]`
