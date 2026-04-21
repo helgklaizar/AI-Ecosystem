@@ -13,6 +13,20 @@ Because the AI industry moves incredibly fast. By using AI Ecosystem, you are **
 
 ---
 
+## 👥 Who Is This For?
+
+The setup is highly personalized based on your profession. When you install the ecosystem, the AI will tailor the tools specifically for you. Currently, our AI agents are trained to support:
+
+- **Frontend Developers** (React, Next.js, UI/UX Animation)
+- **Backend Engineers** (Python Async, Rust Systems, Database Architecture)
+- **iOS / macOS Devs** (Swift, SwiftUI, Native Apple Development)
+- **Machine Learning & AI Researchers** (Apple Silicon MLX, Local LLMs, Google GenAI)
+- **DevOps & Infrastructure** (Docker Sandboxes, Production Syncing)
+- **QA & Security** (Test Automation, Security Auditing, Crash Detectives)
+- **Quantitative Analysts** (Algo Trading, Backtesting, Market Scouting)
+
+---
+
 ## 🚀 How to Install
 
 It takes 1 minute and works by having your AI configure itself.
