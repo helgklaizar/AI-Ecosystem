@@ -32,4 +32,4 @@ description: Workflow description
 
 ### 4. 🗄 Обновление глобальной БД
 // turbo
-Допиши лучшие 2-3 ссылки в глобальный лог `/Users/klai/.gemini/integrated-sources-log.md` с пометкой `[Quant/Math AI]`, чтобы они сохранились в глобальной памяти воркспейса.
+Допиши лучшие 2-3 ссылки в глобальный лог `~/.gemini/antigravity/knowledge/sources-log.md` с пометкой `[Quant/Math AI]`, чтобы они сохранились в глобальной памяти воркспейса.

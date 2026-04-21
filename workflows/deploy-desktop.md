@@ -11,7 +11,7 @@ description: Пайплайн сборки десктопных бинарник
    cargo clean (по необходимости)
    ```
 2. **Сборка Фронтенда и Tauri:**
-   - Для Tauri приложений (rms-ai-os, tele-feed) запусти `pnpm run build && pnpm run tauri build` (или аналогичную команду проекта).
+   - Для Tauri приложений запусти `pnpm run build && pnpm run tauri build` (или аналогичную команду проекта).
 3. **App Translocation Fix & C-Libs:**
    - Убедись, что внешние `dylib` (напр. `libtdjson.dylib`) лежат в правильном Frameworks банде или скрипт перемещает их после билда.
 4. **Физическое перемещение (macOS):**

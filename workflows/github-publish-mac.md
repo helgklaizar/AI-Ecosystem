@@ -21,9 +21,6 @@ description: "Глобальный процесс оформления и пуб
 > Этот проект является частью масштабной инициативы по созданию недостающих хардкорных инструментов и расширений для AI-разработки на Apple Silicon.
 > 
 > **Наши другие проекты:**
-> - [TurboQuant MLX](https://github.com/klai/turboquant_mlx) — Алгоритмический трейдинг и оптимизация на Apple GPU.
-> - [CUDA2MLX Bridge](https://github.com/klai/cuda2mlx) — Запуск NVIDIA репозиториев на Маке.
-> - [APFS RAG Indexer](https://github.com/klai/apfs-indexer) — Фоновый Native RAG.
 ```
 **Структура остального ридми:**
 - **Why?** (Почему мы это сделали).

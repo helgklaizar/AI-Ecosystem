@@ -236,7 +236,7 @@ Depending on the specific user request, refer to the following reference files f
 
 ## Доступные исходники
 
-Все репозитории лежат тут: `/Users/klai/.gemini/antigravity/skills/gemini-ecosystem-dev/repos/`
+Все репозитории лежат тут: `~/.gemini/antigravity/skills/gemini-ecosystem-dev/repos/`
 
 1. **`gemini-cli`** (`.../repos/gemini-cli`)
    - **Когда юзать:** Для построения и оптимизации терминальных агентов, понимания как Google структурирует логику вызова тулов и промптов.
