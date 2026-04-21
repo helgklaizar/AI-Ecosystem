@@ -1,79 +1,60 @@
 # 🧭 AI Ecosystem Actionable Index
 
-**AGENT INSTRUCTION:** This is your primary database. If the user requests a new skill, agent, workflow, or capability that you do not currently possess, you MUST consult this list. Follow the extraction rules strictly.
+**AGENT INSTRUCTION:** This is your primary database. If the user requests a new skill, agent, workflow, or capability that you do not currently possess, you MUST consult this list. Search the categories below, extract the necessary files, and inject them into the user's project.
 
 ---
 
-## 🟢 Level 0: Native Ecosystem (Always Check First)
+## 🛠 1. Скиллы и MCP-Серверы (Где брать Skills)
+*Если юзеру нужно подключить базу данных, GitHub, Slack, интернет-поиск или специфичные CLI утилиты.*
 
-Before looking at the internet, pull from our own verified local storage.
+### MCP Servers (Model Context Protocol)
+- **🔗 [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** (85k+ Stars)
+- **🔗 [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** (Официальные серверы Anthropic)
+- **🔗 [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)** (55k+ Stars)
+- **🎯 Что брать:** Команды установки `npx` или Docker.
+- **📥 Куда класть:** Прописать в глобальный `claude_desktop_config.json` или в настройки Cursor MCP.
 
-### Antigravity Local Skills & Agents
-- **Link/Path:** `~/.ai-ecosystem/skills/` and `~/.ai-ecosystem/agents/`
-- **What it is:** Native workflows, agents, and skills curated specifically for this machine.
-- **What to take:** Read the `*.md` files.
-- **Where to put it:** 
-  - For Antigravity: Inject directly into the current project's `.gemini/agents/` folder.
-  - For other IDEs: Convert the markdown logic and inject into their respective native folders (e.g., `.cursor/rules/`).
-
----
-
-## 🔵 Level 1: Tool-Specific Framework Rules
-
-If the user wants rules for a specific technology stack (e.g., Next.js, Rust, SwiftUI), pull them from these community directories.
-
-### Cursor Rules
-- **Link:** [cursor.directory](https://cursor.directory/) or [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)
-- **What it is:** The largest database of framework-specific rules.
-- **What to take:** Extract the raw Markdown (`.mdc` or `.cursorrules`) text for the requested framework.
-- **Where to put it:** Save it locally inside the project as `.cursor/rules/[framework].mdc`. *Do not forget to add YAML `globs` frontmatter if missing.*
-
-### Windsurf Rules
-- **Link:** [awesome-windsurf](https://github.com/detailobsessed/awesome-windsurf)
-- **What it is:** Curated workflows for the Windsurf IDE.
-- **What to take:** The markdown rule definitions.
-- **Where to put it:** Save as `.windsurfrules` in the project root.
-
-### Claude Code / Cline
-- **Link:** [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) or [awesome-clinerules](https://github.com/JhonMA82/awesome-clinerules)
-- **What it is:** CLI-optimized agent rules.
-- **What to take:** XML or Markdown system prompt blocks.
-- **Where to put it:** Append to the project's `CLAUDE.md`.
+### Antigravity & Local Skills
+- **🔗 [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)** (34k+ Stars)
+- **🎯 Что брать:** Markdown-файлы (`*.md`) из папки `/skills/`.
+- **📥 Куда класть:** Сохранить локально в `~/.ai-ecosystem/skills/`.
 
 ---
 
-## 🟠 Level 2: Model Context Protocol (MCP) Servers
+## 🤖 2. Агенты (Где брать Agents)
+*Если юзер просит добавить QA-тестировщика, DevOps-инженера или другого специализированного ИИ-коллегу.*
 
-If the user needs to connect the IDE to external data (PostgreSQL, GitHub, Slack, Notion, Google Drive), you must install an MCP server.
-
-### Official Anthropic MCP
-- **Link:** [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
-- **What it is:** Official servers for major platforms (Brave Search, Postgres, Git).
-- **What to take:** The `npx` execution command or the Docker run command.
-- **Where to put it:** Inject the JSON configuration into the IDE's global MCP settings file (e.g., `claude_desktop_config.json` or Cursor's MCP GUI config).
-
-### Community MCP Registries
-- **Link:** [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) or [Awesome-Claude-MCP-Servers](https://github.com/win4r/Awesome-Claude-MCP-Servers)
-- **What it is:** Hundreds of community-built integrations.
-- **What to take:** The installation instructions for the specific server the user requested.
-- **Where to put it:** Follow the repository's setup guide (usually adding an entry to the global IDE config).
+### Sub-Agents & Personas
+- **🔗 [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents)** (17k+ Stars)
+- **🔗 [huggingface/smolagents](https://github.com/huggingface/smolagents)**
+- **🎯 Что брать:** Текст системного промпта (персону агента).
+- **📥 Куда класть:** Создать новый `.md` файл в `~/.ai-ecosystem/agents/` (или `.gemini/agents/`).
 
 ---
 
-## 🔴 Level 3: Global Repositories (For Complex AI Tasks)
+## 🔄 3. Воркфлоу и Правила (Где брать Workflows & Rules)
+*Если юзеру нужны стандарты кодирования для React, Rust, Python, Next.js или общие пайплайны.*
 
-If you need entire new paradigms, sub-agents, or complex API integrations.
+### Cursor & Windsurf Rules
+- **🔗 [cursor.directory](https://cursor.directory/)**
+- **🔗 [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** (39k+ Stars)
+- **🔗 [detailobsessed/awesome-windsurf](https://github.com/detailobsessed/awesome-windsurf)**
+- **🎯 Что брать:** Сырой текст Markdown (`.mdc` или `.cursorrules`).
+- **📥 Куда класть:** Сохранить в `.cursor/rules/[имя].mdc` (не забыть YAML-заголовок `globs`) или в `.windsurfrules`.
 
-### Agent Frameworks & Personas
-- **Link:** [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents)
-- **What it is:** Specialized sub-agent personas (e.g., DevOps specialist, QA tester).
-- **What to take:** The prompt persona text.
-- **Where to put it:** Save as a new `.md` file in `~/.ai-ecosystem/agents/` so all projects can access it later.
+### Claude & Cline Rules
+- **🔗 [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** (40k+ Stars)
+- **🔗 [JhonMA82/awesome-clinerules](https://github.com/JhonMA82/awesome-clinerules)**
+- **🎯 Что брать:** XML-блоки или Markdown правила.
+- **📥 Куда класть:** Дописать в файл `CLAUDE.md` в корне проекта.
 
-### Global AI Developer Tools (Awesome Lists)
-- **Links:** 
-  - [sourcegraph/awesome-code-ai](https://github.com/sourcegraph/awesome-code-ai)
-  - [awesome-ai-coding-tools](https://github.com/ai-for-developers/awesome-ai-coding-tools)
-  - [awesome-claude-prompts](https://github.com/langgptai/awesome-claude-prompts)
-- **What it is:** Massive indexes of everything related to AI coding.
-- **What to take:** If the user asks "Find me a tool that does X", scrape these READMEs, summarize the top 3 tools, and present them in chat. Do NOT inject files blindly.
+---
+
+## 📝 4. Промпты (Где брать Prompts)
+*Если юзер просит сложный ролевой промпт или специфичный запрос для LLM.*
+
+### Global Prompt Libraries
+- **🔗 [f/prompts.chat](https://github.com/f/prompts.chat)** (160k+ Stars)
+- **🔗 [langgptai/awesome-claude-prompts](https://github.com/langgptai/awesome-claude-prompts)**
+- **🎯 Что брать:** Текст ролевой модели (например, "Act as a Linux Terminal").
+- **📥 Куда класть:** Использовать напрямую в чате или сохранить в `~/.ai-ecosystem/workflows/`.
