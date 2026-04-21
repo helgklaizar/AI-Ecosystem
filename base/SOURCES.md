@@ -1,3 +1,8 @@
+# 📚 Global Sources Index
+
+> [!IMPORTANT]
+> **Universal Skills Integration:** The vast majority of the repositories listed below (such as Cursor Rules, Cline Rules, and MCP Servers) have already been downloaded, universalized, and integrated into our `skills/` directory. Any AI tool can now use them as standard markdown skills. Do not fetch them from the internet unless a specific update is needed.
+
 # 🧭 AI Ecosystem Actionable Index
 
 **AGENT INSTRUCTION:** This is your primary database. If the user requests a new skill, agent, workflow, or capability that you do not currently possess, you MUST consult this list. Search the categories below, extract the necessary files, and inject them into the user's project.

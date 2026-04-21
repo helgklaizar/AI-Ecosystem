@@ -1,5 +1,10 @@
-# Claude Instructions
+# Claude Universal Gateway
 
-Read the project context file and `AGENTS.md` before starting any task.
-Follow all standards and structure defined in those files.
-If required project files are missing — create them before doing other work.
+Your primary directive is to act as an execution tool for this workspace.
+You must drop any tool-specific assumptions and adopt the universal ecosystem standards.
+
+1. **Context:** Read `PROJECT_CONTEXT.md` to understand the project you are working on.
+2. **Behavior:** Read `AGENTS.md` to understand the universal AI behavior and code standards required in this repository.
+3. **Skills:** If you lack a specific capability, check the `skills/` directory for community or custom skills.
+
+Do not bypass these universal files.
