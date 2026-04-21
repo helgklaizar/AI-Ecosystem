@@ -10,20 +10,22 @@ You get the right agents, workflows, and skills for your profession. Nothing mor
 
 ## How It Works
 
+## How It Works
+
 ```
-1. Run Configurator (macOS app)
-2. Answer 5 questions in a chat:
-   └── Name / Profession / Stack / AI Tools / Projects folder
-3. Your environment is configured automatically:
+1. Give this repository link to your AI (Antigravity, Cursor, Claude).
+2. Ask the AI to read `AI_ONBOARDING.md`.
+3. The AI will conduct a quick onboarding interview in the chat.
+4. The AI uses its terminal access to automatically deploy your environment:
    ├── ~/.gemini/            ← global AI config
    ├── <projects>/.gemini/   ← workspace agents
-   └── Downloaded from this repo:
+   └── Copied from this repo:
        ├── agents/           ← for your profession
        ├── workflows/        ← for your stack
        └── skills/           ← specific skills you need
 ```
 
-No manual setup. No copy-pasting configs. Just open the app and answer questions.
+No manual setup. No standalone installers. Just talk to your AI.
 
 ---
 
@@ -46,11 +48,11 @@ All professions also receive a base set: `huxley-coder`, `swarm-orchestrator`, `
 
 ## Repository Structure
 
-```
 AI-Ecosystem/
+├── AI_ONBOARDING.md      ← The Agent Setup Script (Start here!)
 ├── base/
 │   ├── STRUCTURE.md      ← the standard: what files go where and why
-│   └── SOURCES.md        ← attribution for all external skills/workflows
+│   └── SOURCES.md        ← attribution for external skills/workflows
 │
 ├── agents/               ← AI agent definitions (.md)
 ├── workflows/            ← global workflow guides (.md)
@@ -60,12 +62,7 @@ AI-Ecosystem/
 │   ├── ml/
 │   ├── qa/
 │   └── tools/
-├── templates/            ← base templates (GEMINI.md, AGENTS.md, CLAUDE.md)
-│
-└── installer/            ← Configurator: macOS app that runs the setup
-    ├── Package.swift
-    └── Sources/Configurator/
-```
+└── templates/            ← base templates (GEMINI.md, AGENTS.md, CLAUDE.md)
 
 ---
 
@@ -100,28 +97,18 @@ AI Ecosystem is not tied to one tool. During setup you pick what you use:
 
 ---
 
-## Configurator App (macOS Installer)
+## Agent-Driven Setup (Eat Your Own Dogfood)
 
-The `installer/` folder contains the Swift macOS app that drives the setup.
+We replaced the standalone macOS installer with a pure Agentic workflow. 
+Why download a standalone app when an AI can just read a file and configure your system itself?
 
-**Features:**
-- Chat-based onboarding — no forms, just a conversation
-- Downloads the right files from this repo for your profession
-- Real-time setup log in chat
-- Auto-updates: checks this repo for new agents/workflows on startup
-- App updater: checks GitHub Releases for new versions of Configurator itself
-- Commands after setup: `статус`, `обновить`, `починить`
+**How to start:**
+1. Open Antigravity (or your preferred AI agent).
+2. Say: *"Read `AI_ONBOARDING.md` from the AI-Ecosystem repo and bootstrap my system."*
+3. The AI will ask where your projects are, scan the directory, and then ask you about your profession and stack.
+4. The AI will automatically run the bash commands needed to deploy the ecosystem across your machines.
 
-**Build:**
-```bash
-cd installer
-swift build
-swift run
-```
-
-**Requirements:** macOS 13+, Swift 5.9+
-
----
+It is fully idempotent (safe to run multiple times) and automatically maps your tools (Cursor, Claude, Copilot) to the single source of truth.
 
 ## Skill Sources
 
@@ -138,7 +125,7 @@ Key external sources:
 
 ## Updates
 
-This repository is the source of truth for all configs. When you run `обновить` in Configurator, it pulls the latest agents, workflows, and skills from here and updates your local installation.
+This repository is the source of truth for all configs. To update your local installation, simply ask your AI agent to run `AI_ONBOARDING.md` again. It will safely merge any new templates or agents without destroying your local project code.
 
 ---
 
