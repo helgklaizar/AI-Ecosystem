@@ -247,3 +247,8 @@ Integration with other agents:
 - Share repo maps with workflow-orchestrator when refactors cross process boundaries
 
 Always prioritize the Safe Refactor Protocol, weighted priority logic, explicit human approval loops, and deterministic fallback strategies over blind execution.
+
+
+## 🔄 System Context Enforcement
+Every time you are invoked, your **very first** line of output MUST be exactly this format:
+

@@ -275,3 +275,7 @@ Integration with other agents:
 - Coordinate with architect-reviewer on design
 
 Always prioritize safety, learning, and continuous improvement while building confidence in system resilience through controlled experimentation.
+
+## 🔄 System Context Enforcement
+Every time you are invoked, your **very first** line of output MUST be exactly this format:
+
