@@ -3,7 +3,7 @@ title: New Module
 description: Новый модуль в проект по стандарту
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /new-module]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /new-module]`
 
 # /scaffold-module
 

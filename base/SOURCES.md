@@ -4,57 +4,57 @@
 
 ---
 
-## 🛠 1. Скиллы и MCP-Серверы (Где брать Skills)
-*Если юзеру нужно подключить базу данных, GitHub, Slack, интернет-поиск или специфичные CLI утилиты.*
+## 🛠 1. Skills and MCP Servers (Where to get Skills)
+*If the user needs to connect a database, GitHub, Slack, web search, or specific CLI utilities.*
 
 ### MCP Servers (Model Context Protocol)
 - **🔗 [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** (85k+ Stars)
-- **🔗 [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** (Официальные серверы Anthropic)
+- **🔗 [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** (Official Anthropic servers)
 - **🔗 [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)** (55k+ Stars)
-- **🎯 Что брать:** Команды установки `npx` или Docker.
-- **📥 Куда класть:** Прописать в глобальный `claude_desktop_config.json` или в настройки Cursor MCP.
+- **🎯 What to take:** `npx` or Docker installation commands.
+- **📥 Where to put it:** Add to the global `claude_desktop_config.json` or Cursor MCP settings.
 
 ### Antigravity & Local Skills
 - **🔗 [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)** (34k+ Stars)
-- **🎯 Что брать:** Markdown-файлы (`*.md`) из папки `/skills/`.
-- **📥 Куда класть:** Сохранить локально в `~/.ai-ecosystem/skills/`.
+- **🎯 What to take:** Markdown files (`*.md`) from the `/skills/` folder.
+- **📥 Where to put it:** Save locally in `~/.ai-ecosystem/skills/`.
 
 ---
 
-## 🤖 2. Агенты (Где брать Agents)
-*Если юзер просит добавить QA-тестировщика, DevOps-инженера или другого специализированного ИИ-коллегу.*
+## 🤖 2. Agents (Where to get Agents)
+*If the user asks to add a QA tester, DevOps engineer, or other specialized AI colleague.*
 
 ### Sub-Agents & Personas
 - **🔗 [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents)** (17k+ Stars)
 - **🔗 [huggingface/smolagents](https://github.com/huggingface/smolagents)**
-- **🎯 Что брать:** Текст системного промпта (персону агента).
-- **📥 Куда класть:** Создать новый `.md` файл в `~/.ai-ecosystem/agents/` (или `.gemini/agents/`).
+- **🎯 What to take:** System prompt text (agent persona).
+- **📥 Where to put it:** Create a new `.md` file in `~/.ai-ecosystem/agents/` (or `.gemini/agents/`).
 
 ---
 
-## 🔄 3. Воркфлоу и Правила (Где брать Workflows & Rules)
-*Если юзеру нужны стандарты кодирования для React, Rust, Python, Next.js или общие пайплайны.*
+## 🔄 3. Workflows and Rules (Where to get Workflows & Rules)
+*If the user needs coding standards for React, Rust, Python, Next.js, or general pipelines.*
 
 ### Cursor & Windsurf Rules
 - **🔗 [cursor.directory](https://cursor.directory/)**
 - **🔗 [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** (39k+ Stars)
 - **🔗 [detailobsessed/awesome-windsurf](https://github.com/detailobsessed/awesome-windsurf)**
-- **🎯 Что брать:** Сырой текст Markdown (`.mdc` или `.cursorrules`).
-- **📥 Куда класть:** Сохранить в `.cursor/rules/[имя].mdc` (не забыть YAML-заголовок `globs`) или в `.windsurfrules`.
+- **🎯 What to take:** Raw Markdown text (`.mdc` or `.cursorrules`).
+- **📥 Where to put it:** Save to `.cursor/rules/[name].mdc` (do not forget the YAML `globs` header) or to `.windsurfrules`.
 
 ### Claude & Cline Rules
 - **🔗 [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** (40k+ Stars)
 - **🔗 [JhonMA82/awesome-clinerules](https://github.com/JhonMA82/awesome-clinerules)**
-- **🎯 Что брать:** XML-блоки или Markdown правила.
-- **📥 Куда класть:** Дописать в файл `CLAUDE.md` в корне проекта.
+- **🎯 What to take:** XML blocks or Markdown rules.
+- **📥 Where to put it:** Append to the `CLAUDE.md` file in the project root.
 
 ---
 
-## 📝 4. Промпты (Где брать Prompts)
-*Если юзер просит сложный ролевой промпт или специфичный запрос для LLM.*
+## 📝 4. Prompts (Where to get Prompts)
+*If the user asks for a complex roleplay prompt or a specific LLM request.*
 
 ### Global Prompt Libraries
 - **🔗 [f/prompts.chat](https://github.com/f/prompts.chat)** (160k+ Stars)
 - **🔗 [langgptai/awesome-claude-prompts](https://github.com/langgptai/awesome-claude-prompts)**
-- **🎯 Что брать:** Текст ролевой модели (например, "Act as a Linux Terminal").
-- **📥 Куда класть:** Использовать напрямую в чате или сохранить в `~/.ai-ecosystem/workflows/`.
+- **🎯 What to take:** Role model text (e.g., "Act as a Linux Terminal").
+- **📥 Where to put it:** Use directly in chat or save to `~/.ai-ecosystem/workflows/`.

@@ -3,7 +3,7 @@ title: Log External Source
 description: Автоматическое логирование внешних ссылок и ресурсов в базу данных AI Radar
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /log-external-source]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /log-external-source]`
 
 # Трекер Внешних Источников (AI Radar Data Collector)
 

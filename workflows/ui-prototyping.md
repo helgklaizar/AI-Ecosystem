@@ -3,7 +3,7 @@ title: Ui Prototyping
 description: Быстрая генерация UI компонентов и их интерактивный прототипированный дизайн
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /ui-prototyping]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /ui-prototyping]`
 
 # AI UI Prototyping (Stitch-SDK style)
 

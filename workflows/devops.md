@@ -22,4 +22,4 @@ description: DevOps инженер. Настройка CI/CD, пайплайно
 
 ## 🔄 System Context Enforcement
 Every time you are invoked, your **very first** line of output MUST be exactly this format:
-`🔄 **Контекст:** [Агент: devops] | [Скилл: None] | [Воркфлоу: None]`
+`🔄 **Context:** [Agent: devops] | [Skill: None] | [Workflow: None]`

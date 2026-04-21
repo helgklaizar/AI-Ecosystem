@@ -3,7 +3,7 @@ title: Deploy Desktop
 description: Пайплайн сборки десктопных бинарников (.app, .dmg) (Tauri), разруливание кэшей и подписей (macOS codesigning).
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /deploy-desktop]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /deploy-desktop]`
 
 1. **Очистка и Кэши:** Удали директории сборки (например, `.next`, `target/release/bundle`) чтобы избежать проблем Turbopack и старых кэшей Rust.
    ```bash

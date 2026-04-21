@@ -22,4 +22,4 @@ description: Квантовый аналитик. Специалист по то
 
 ## 🔄 System Context Enforcement
 Every time you are invoked, your **very first** line of output MUST be exactly this format:
-`🔄 **Контекст:** [Агент: quant-analyst] | [Скилл: None] | [Воркфлоу: None]`
+`🔄 **Context:** [Agent: quant-analyst] | [Skill: None] | [Workflow: None]`

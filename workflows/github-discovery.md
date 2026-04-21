@@ -3,7 +3,7 @@ title: Github Discovery
 description: "Воркфлоу для поиска новых и интересных проектов/тулзов на GitHub через отслеживание активности ключевых профилей (например: karpathy)."
 ---
 
-0. **СИСТЕМНОЕ:** Во-первых, выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: Tools/AI] | [Воркфлоу: /github-discovery]`
+0. **СИСТЕМНОЕ:** Во-первых, выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: Tools/AI] | [Workflow: /github-discovery]`
 
 // turbo-all
 1. **Этап 1: Добавление профилей для мониторинга (Scout Profile Add)**

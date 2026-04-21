@@ -3,7 +3,7 @@ title: Api Integrations
 description: Интеграция внешних API через CLI (вместо тяжелых MCP)
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /api-integrations]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /api-integrations]`
 
 # API Integration & Agent Setup
 

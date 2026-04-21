@@ -3,7 +3,7 @@ title: Deploy Prod
 description: Подготовка релиз-ноутов, безопасная продакшен-сборка и деплой на Staging/Prod
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /deploy-prod]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /deploy-prod]`
 
 # Deploy Prod & Release
 

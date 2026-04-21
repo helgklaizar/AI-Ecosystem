@@ -3,7 +3,7 @@ title: Road Start
 description: Workflow description
 ---
 
-0. **СИСТЕМНОЕ:** Выведи: `🔄 **Контекст:** [Агент: manager] | [Скилл: None] | [Воркфлоу: /road-start]`
+0. **СИСТЕМНОЕ:** Выведи: `🔄 **Context:** [Agent: manager] | [Skill: None] | [Workflow: /road-start]`
 
 // turbo-all
 1. Создай или обнови документ `ROADMAP.md` в корне проекта или удали старые неактуальные документы (аудиты, v2, v3 и прочее). Раздели план на Спринты (Sprints) и Конкретные Задачи (Tasks) с четкими Acceptance Criteria.

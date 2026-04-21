@@ -3,7 +3,7 @@ title: Git Hooks Qa
 description: Локальный QA гейт и координация ИИ-агентов через Git Hooks (архитектура Claude Studio)
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /git-hooks-qa]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /git-hooks-qa]`
 
 # Git Hooks Agent Gate
 

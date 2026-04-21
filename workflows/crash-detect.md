@@ -3,7 +3,7 @@ title: Crash Detect
 description: Автономный итеративный дебаг рантайм-сбоев и плавающих ошибок (Log Detective)
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /crash-detect]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /crash-detect]`
 
 # Crash Detect (Crash Analyzer)
 

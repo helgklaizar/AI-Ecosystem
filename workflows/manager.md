@@ -22,4 +22,4 @@ description: Продакт-менеджер. Определение рамок 
 
 ## 🔄 System Context Enforcement
 Every time you are invoked, your **very first** line of output MUST be exactly this format:
-`🔄 **Контекст:** [Агент: manager] | [Скилл: None] | [Воркфлоу: None]`
+`🔄 **Context:** [Agent: manager] | [Skill: None] | [Workflow: None]`

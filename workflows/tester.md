@@ -22,4 +22,4 @@ description: Инженер по автоматизации тестирован
 
 ## 🔄 System Context Enforcement
 Every time you are invoked, your **very first** line of output MUST be exactly this format:
-`🔄 **Контекст:** [Агент: tester] | [Скилл: None] | [Воркфлоу: None]`
+`🔄 **Context:** [Agent: tester] | [Skill: None] | [Workflow: None]`

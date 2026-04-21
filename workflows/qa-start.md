@@ -3,7 +3,7 @@ title: Qa Start
 description: Полный цикл качества, тестирования, безопасности и отладки
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Current] | [Скилл: None] | [Воркфлоу: /qa-start]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Current] | [Skill: None] | [Workflow: /qa-start]`
 
 # /qa-start (Quality Assurance & Debugging Master)
 

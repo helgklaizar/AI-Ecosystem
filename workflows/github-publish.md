@@ -3,7 +3,7 @@ title: Github Publish
 description: Оформление и публикация репозитория на GitHub (Premium Standard)
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом выведи в чат: `🔄 **Контекст:** [Агент: devops] | [Скилл: tools] | [Воркфлоу: /github-publish]`
+0. **СИСТЕМНОЕ:** Строго первым делом выведи в чат: `🔄 **Context:** [Agent: devops] | [Skill: tools] | [Workflow: /github-publish]`
 
 // turbo-all
 1. Проведи анализ директории, определи стек, назначение и статус проекта.

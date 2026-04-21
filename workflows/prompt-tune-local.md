@@ -3,7 +3,7 @@ title: Prompt Tune Local
 description: Воркфлоу бенчмарка промптов на локальных малых LLM (MLX, Ollama, Gemma, Llama).
 ---
 
-0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Контекст:** [Агент: Quant/AI] | [Скилл: local-llm-engineer] | [Воркфлоу: /prompt-tune-local]`
+0. **СИСТЕМНОЕ:** Строго первым делом немедленно выведи в чат: `🔄 **Context:** [Agent: Quant/AI] | [Skill: local-llm-engineer] | [Workflow: /prompt-tune-local]`
 
 1. **Инициализация Engine:** Проверь доступность Ollama `curl -X GET http://localhost:11434/api/tags` или MLX runtime. Оцени свободную память (RAM/VRAM).
 2. **Загрузка Тестового Датасета:** Возьми массив из `benchmarks.json` или `input_tests.json`, который содержит краевые случаи, где малые модели обычно галлюцинируют (например, многоэтажный JSON).
