@@ -23,19 +23,19 @@ Before looking at the internet, pull from our own verified local storage.
 If the user wants rules for a specific technology stack (e.g., Next.js, Rust, SwiftUI), pull them from these community directories.
 
 ### Cursor Rules
-- **Link:** `https://cursor.directory/` or `https://github.com/PatrickJS/awesome-cursorrules`
+- **Link:** [cursor.directory](https://cursor.directory/) or [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)
 - **What it is:** The largest database of framework-specific rules.
 - **What to take:** Extract the raw Markdown (`.mdc` or `.cursorrules`) text for the requested framework.
 - **Where to put it:** Save it locally inside the project as `.cursor/rules/[framework].mdc`. *Do not forget to add YAML `globs` frontmatter if missing.*
 
 ### Windsurf Rules
-- **Link:** `https://github.com/detailobsessed/awesome-windsurf`
+- **Link:** [awesome-windsurf](https://github.com/detailobsessed/awesome-windsurf)
 - **What it is:** Curated workflows for the Windsurf IDE.
 - **What to take:** The markdown rule definitions.
 - **Where to put it:** Save as `.windsurfrules` in the project root.
 
 ### Claude Code / Cline
-- **Link:** `https://github.com/hesreallyhim/awesome-claude-code` or `https://github.com/JhonMA82/awesome-clinerules`
+- **Link:** [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) or [awesome-clinerules](https://github.com/JhonMA82/awesome-clinerules)
 - **What it is:** CLI-optimized agent rules.
 - **What to take:** XML or Markdown system prompt blocks.
 - **Where to put it:** Append to the project's `CLAUDE.md`.
@@ -47,13 +47,13 @@ If the user wants rules for a specific technology stack (e.g., Next.js, Rust, Sw
 If the user needs to connect the IDE to external data (PostgreSQL, GitHub, Slack, Notion, Google Drive), you must install an MCP server.
 
 ### Official Anthropic MCP
-- **Link:** `https://github.com/modelcontextprotocol/servers`
+- **Link:** [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
 - **What it is:** Official servers for major platforms (Brave Search, Postgres, Git).
 - **What to take:** The `npx` execution command or the Docker run command.
 - **Where to put it:** Inject the JSON configuration into the IDE's global MCP settings file (e.g., `claude_desktop_config.json` or Cursor's MCP GUI config).
 
 ### Community MCP Registries
-- **Link:** `https://github.com/punkpeye/awesome-mcp-servers` or `https://github.com/win4r/Awesome-Claude-MCP-Servers`
+- **Link:** [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) or [Awesome-Claude-MCP-Servers](https://github.com/win4r/Awesome-Claude-MCP-Servers)
 - **What it is:** Hundreds of community-built integrations.
 - **What to take:** The installation instructions for the specific server the user requested.
 - **Where to put it:** Follow the repository's setup guide (usually adding an entry to the global IDE config).
@@ -65,15 +65,15 @@ If the user needs to connect the IDE to external data (PostgreSQL, GitHub, Slack
 If you need entire new paradigms, sub-agents, or complex API integrations.
 
 ### Agent Frameworks & Personas
-- **Link:** `https://github.com/VoltAgent/awesome-claude-code-subagents`
+- **Link:** [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents)
 - **What it is:** Specialized sub-agent personas (e.g., DevOps specialist, QA tester).
 - **What to take:** The prompt persona text.
 - **Where to put it:** Save as a new `.md` file in `~/.ai-ecosystem/agents/` so all projects can access it later.
 
 ### Global AI Developer Tools (Awesome Lists)
 - **Links:** 
-  - `https://github.com/sourcegraph/awesome-code-ai`
-  - `https://github.com/ai-for-developers/awesome-ai-coding-tools`
-  - `https://github.com/langgptai/awesome-claude-prompts`
+  - [sourcegraph/awesome-code-ai](https://github.com/sourcegraph/awesome-code-ai)
+  - [awesome-ai-coding-tools](https://github.com/ai-for-developers/awesome-ai-coding-tools)
+  - [awesome-claude-prompts](https://github.com/langgptai/awesome-claude-prompts)
 - **What it is:** Massive indexes of everything related to AI coding.
 - **What to take:** If the user asks "Find me a tool that does X", scrape these READMEs, summarize the top 3 tools, and present them in chat. Do NOT inject files blindly.
