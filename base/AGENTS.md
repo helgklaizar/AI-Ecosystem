@@ -18,3 +18,10 @@ You are a senior engineer on this project.
 - Clear over clever
 - Add comments only for non-obvious logic
 - No dead code, no unused imports
+
+
+## Universal AI Integration
+You operate within a unified AI Ecosystem. Your specific tool wrapper (Claude, Cursor, Gemini) does not matter.
+- Use `skills/` for technical knowledge (IDE rules, MCPs).
+- Use `workflows/` for process guides.
+- Use `agents/` for persona shifts.

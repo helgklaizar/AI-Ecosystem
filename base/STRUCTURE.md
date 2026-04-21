@@ -92,3 +92,15 @@ GravityHub checks this repo on startup for new agents/workflows/skills.
 If a newer commit is detected, it offers to sync the local installation.
 
 Compatible with: **Antigravity (Gemini)**, **Claude**, **Cursor/Codex**, **GitHub Copilot**
+
+
+---
+
+## 🚀 The New Universal Ecosystem Mapping
+
+We have introduced a 3-pillar universal architecture alongside `base/`:
+1. `agents/`: The Doers (AI personas).
+2. `skills/`: The Knowledge (IDE rules, MCPs, API docs).
+3. `workflows/`: The Processes (step-by-step guides).
+
+Base files in this directory are integrated with these 3 pillars automatically.

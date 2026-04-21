@@ -1,3 +1,7 @@
+
+
+> [!IMPORTANT]
+> **Universal Skills Integration:** Most rules and MCPs from external sources have been downloaded and universalized in our `skills/` directory. Check local skills before fetching from the internet.
 # 🧭 AI Ecosystem Actionable Index
 
 **AGENT INSTRUCTION:** This is your primary database. If the user requests a new skill, agent, workflow, or capability that you do not currently possess, you MUST consult this list. Search the categories below, extract the necessary files, and inject them into the user's project.
