@@ -46,10 +46,13 @@ Once approved, execute the following:
 1. **Global Setup**: Create `~/.ai-ecosystem/` and its subdirectories (`agents`, `workflows`, `skills`, `templates`, `knowledge`, `brain`).
 2. **Download & Copy**: Copy the core files from this repository to the global directory (e.g., `base/STRUCTURE.md`, `templates/GEMINI.md`, and specific skills/workflows based on their profession).
 3. **Dependencies**: If the user approved package installation, run `brew install`, `npm i -g`, or `pip install` for missing core tools relevant to their profession.
-4. **Project Injection**: For every project found in Stage 2:
-   - Create `.ai/agents/` and `.ai/brain/` locally.
-   - Write `.cursorrules`, `CLAUDE.md`, `.windsurfrules`, or `.github/copilot-instructions.md` depending on the tools they selected. These files MUST reference the `.ai/` local memory and `~/.ai-ecosystem/` global rules.
-   - Ensure you do NOT overwrite existing project code. Only inject ecosystem rules.
+4. **Project Injection (Native Routing)**: For every project found in Stage 2, you MUST deploy the ecosystem rules into the **native folders** of the tools the user selected. Do NOT force a universal folder; use what the tool natively expects:
+   - **Antigravity**: Create `.gemini/agents/` (for rules) and `.gemini/brain/` (for local memory). Write `GEMINI.md`.
+   - **Cursor**: Create `.cursor/rules/` and copy the agents there as `.mdc` files. Write `.cursorrules`.
+   - **Claude**: Write `CLAUDE.md`.
+   - **Copilot**: Create `.github/copilot-agents/` and copy rules there. Write `.github/copilot-instructions.md`.
+   - **Windsurf**: Create `.windsurf/rules/` and copy rules as `.mdc`. Write `.windsurfrules`.
+   - Ensure you do NOT overwrite existing project code. Only inject ecosystem rules natively.
 5. **Git Automation**: If the user approved Git setup:
    - Run `git init`, `git add .`, `git commit -m "chore: setup AI Ecosystem"` in each project.
    - If `gh` is installed, run `gh repo create` and push the initial commit.
