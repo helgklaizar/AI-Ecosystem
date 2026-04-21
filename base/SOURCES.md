@@ -40,7 +40,7 @@
 - **🔗 [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules)** (39k+ Stars)
 - **🔗 [detailobsessed/awesome-windsurf](https://github.com/detailobsessed/awesome-windsurf)**
 - **🎯 What to take:** Raw Markdown text (`.mdc` or `.cursorrules`).
-- **📥 Where to put it:** Save to `.cursor/skills/community/coding-standards/[name].mdc` (do not forget the YAML `globs` header) or to `.windsurfrules`.
+- **📥 Where to put it:** Save to `.cursor/rules/[name].mdc` (do not forget the YAML `globs` header) or to `.windsurfrules`.
 
 ### Claude & Cline Rules
 - **🔗 [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** (40k+ Stars)
