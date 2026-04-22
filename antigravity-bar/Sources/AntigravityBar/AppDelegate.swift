@@ -30,6 +30,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         }
 
         startPolling()
+        
+        // Auto-show wizard if profile doesn't exist
+        checkAndShowSetupWizard()
     }
 
     // MARK: - Polling
@@ -286,6 +289,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(.separator())
 
         // Ecosystem Actions
+        menu.addItem(makeItem("🖥️ Setup Wizard (UI)", action: #selector(openSetupWizard)))
         menu.addItem(makeItem("👤 My Ecosystem Profile", action: #selector(openProfile)))
         menu.addItem(makeItem("🪄 Auto-Configure Ecosystem", action: #selector(autoConfigureEcosystem)))
         menu.addItem(makeItem("🧬 Agents", action: #selector(openAgents)))
@@ -398,6 +402,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         try? task.run()
     }
 
+    private func checkAndShowSetupWizard() {
+        let profilePath = NSHomeDirectory() + "/.gemini/antigravity/knowledge/user_ecosystem_profile/metadata.json"
+        if !FileManager.default.fileExists(atPath: profilePath) {
+            // Delay slightly so the menu bar finishes drawing first
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                WizardWindowController.shared.showWindow()
+            }
+        }
+    }
+
+    @objc private func openSetupWizard() {
+        WizardWindowController.shared.showWindow()
+    }
 
 
     @objc private func restartLS() {
