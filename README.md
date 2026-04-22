@@ -52,7 +52,7 @@ To maintain a pristine and secure environment, the ecosystem relies on the follo
 - 📖 **[The Ecosystem Guide](ECOSYSTEM_GUIDE.md)** — The curated list of the most valuable stacks to pull from the database.
 - 🚀 **[The Onboarding Script](AI_ONBOARDING.md)** — AI agent instructions for analyzing your system and generating your Profile.
 - 🏗️ **[Base Architecture](base/STRUCTURE.md)** — Project structuring rules for new repos.
-- 🖥️ **[Antigravity Bar Source](antigravity-bar/README.md)** — Source code for the native macOS status bar plugin.
+- 🖥️ **[Antigravity Bar Source](status-bar/README.md)** — Source code for the native macOS status bar plugin.
 
 ---
 

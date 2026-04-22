@@ -104,14 +104,13 @@ struct OnboardingWizardView: View {
     private func configureEcosystem() {
         isConfiguring = true
         
-        // Run background task to simulate config and create KI
-        DispatchQueue.global().async {
-            createKnowledgeItem()
-            
-            DispatchQueue.main.async {
-                isConfiguring = false
-                onComplete?()
-            }
+        // Write profile and KI
+        createKnowledgeItem()
+        
+        // Slight delay to show configuring state briefly
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            isConfiguring = false
+            onComplete?()
         }
     }
     
@@ -200,7 +199,7 @@ struct StackToggle: View {
                 
                 Image(systemName: isOn ? "checkmark.circle.fill" : "circle")
                     .font(.system(size: 20))
-                    .foregroundColor(isOn ? .blue : .quaternaryLabel)
+                    .foregroundColor(isOn ? .blue : Color(NSColor.quaternaryLabelColor))
             }
             .padding(12)
             .background(

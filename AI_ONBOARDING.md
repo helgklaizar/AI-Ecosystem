@@ -43,7 +43,7 @@ Read this entire document before taking ANY action. Do not skip steps.
 Execute the following setup:
 
 ### 1. Build Antigravity Bar
-- Navigate to `antigravity-bar/` and run `sh build-app.sh`.
+- Navigate to `status-bar/` and run `sh build-app.sh`.
 - The Status Bar requires macOS permissions. Advise the user to accept the upcoming prompts for Accessibility and Full Disk Access.
 
 ### 2. Generate Initial `PROFILE.md`
