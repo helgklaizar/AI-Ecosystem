@@ -286,6 +286,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(.separator())
 
         // Ecosystem Actions
+        menu.addItem(makeItem("👤 My Ecosystem Profile", action: #selector(openProfile)))
         menu.addItem(makeItem("🧬 Agents", action: #selector(openAgents)))
         menu.addItem(makeItem("🛠️ Skills", action: #selector(openSkills)))
         menu.addItem(makeItem("🔀 Workflows", action: #selector(openWorkflows)))
@@ -342,6 +343,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     }
 
     // MARK: - Ecosystem Actions
+
+    @objc private func openProfile() {
+        openInAntigravity(antigravityDir + "/PROFILE.md")
+    }
 
     @objc private func openAgents() {
         openInAntigravity(antigravityDir + "/agents")
