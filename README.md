@@ -8,12 +8,12 @@
 
 ## 🎯 Что это за проект? (What is this project?)
 
-This repository is the **Global Master Database** for the Antigravity IDE and all your AI coding agents. It transforms a standard AI coding assistant into a fully autonomous, context-aware development team (Swarm). 
+This repository is the **Global Master Database** for the Antigravity IDE and AI coding agents. It transforms a standard AI coding assistant into a fully autonomous, context-aware development team (Swarm). 
 
-Its primary purpose is to **prevent context fragmentation**. Instead of each project having its own isolated, outdated, and conflicting AI instructions (like local `.gemini/` folders), this ecosystem centralizes everything into a single, highly-curated repository.
+Its primary purpose is to **provide a universal standard** and prevent context fragmentation. Instead of each project having its own isolated and outdated AI instructions, this ecosystem centralizes everything into a single, highly-curated repository that anyone can use for any tech stack.
 
 ### Core Features:
-1. **Curated Skills (`/skills`)**: Highly specific technical instructions for your local stack (MLX, Swift, Next.js).
+1. **Curated Skills (`/skills`)**: Highly specific technical instructions covering all modern tech stacks (Python, Rust, React, Node.js, etc).
 2. **Global Workflows (`/global_workflows`)**: Orchestration pipelines triggered via `/slash-commands` (e.g., website cloning, background research, PR reviews).
 3. **Specialized Agents (`/agents`)**: Distinct AI personas (Architect, QA, DevOps) that can be swapped dynamically.
 4. **Architectural Templates (`/templates`)**: Standardized project configurations:

@@ -4,13 +4,9 @@ Welcome to the **AI Ecosystem Guide**. This document defines the curated list of
 
 ---
 
-## 🎯 Our Tech Stack & Focus Areas
+## 🎯 Global Tech Stack Support
 
-Our projects typically revolve around the following technologies:
-1. **Apple Silicon Native Development**: macOS Status Bars, Swift, SwiftUI, Tauri apps.
-2. **Modern Web Development**: Next.js, React, Tailwind, and high-end animations (Framer Motion).
-3. **AI Engineering**: Local LLMs (MLX), Python backend integrations, Agent orchestration.
-4. **DevOps & QA**: Strict CI/CD pipelines, automated PR reviews, GitHub Actions.
+This ecosystem is built as a **Universal Supermarket**. It contains best-practice instructions and workflows for ALL major development environments, not just one specific stack. Whether a developer is building a Rust backend, a Python ML model, or a Next.js frontend, the relevant tools are available here.
 
 ---
 
