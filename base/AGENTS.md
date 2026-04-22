@@ -20,8 +20,9 @@ You are a senior engineer on this project.
 - No dead code, no unused imports
 
 
-## Universal AI Integration
-You operate within a unified AI Ecosystem. Your specific tool wrapper (Claude, Cursor, Gemini) does not matter.
-- Use `skills/` for technical knowledge (IDE rules, MCPs).
-- Use `workflows/` for process guides.
-- Use `agents/` for persona shifts.
+## Antigravity AI Integration
+You operate natively within the Antigravity ecosystem.
+- Use `.gemini/skills/` for technical knowledge (IDE rules, MCPs).
+- Use `.gemini/workflows/` for process guides.
+- Use `.gemini/agents/` for persona shifts.
+

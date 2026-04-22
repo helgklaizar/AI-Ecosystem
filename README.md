@@ -31,7 +31,7 @@ The setup is highly personalized based on your profession. When you install the 
 
 It takes 1 minute and works by having your AI configure itself.
 
-1. Open your AI IDE (Antigravity, Cursor, Claude, etc.).
+1. Open **Antigravity** (your native Gemini-powered IDE).
 2. Copy and paste this exact prompt into the chat:
    > *"Read `AI_ONBOARDING.md` from the `helgklaizar/AI-Ecosystem` repository and bootstrap my system."*
 3. The AI will ask you a few simple questions and automatically download all the necessary workflows, prompts, and rules directly into your computer.
@@ -50,10 +50,16 @@ To get the newest agents and prompts as the industry evolves:
 
 ## 🧠 For Advanced Users & AI Agents
 
-If you want to understand how the ecosystem works under the hood, or if you are an AI Agent looking for your databases, check out our internal documentation:
+If you want to understand how the ecosystem works under the hood, or if you are an AI Agent looking for your databases, check out our internal documentation.
 
-- 📖 **[The Setup Script (`AI_ONBOARDING.md`)](AI_ONBOARDING.md)** — The exact instructions your AI follows during installation.
-- 🏗️ **[The Architecture (`base/STRUCTURE.md`)](base/STRUCTURE.md)** — How files are mapped to native IDE configs (`.cursorrules`, `CLAUDE.md`, etc.).
+### The 2-Part Project Architecture (Base + Tool)
+Every project initialized by the Ecosystem follows a strict 2-part structure tailored for Antigravity:
+1. **THE BASE**: The universal foundation. This includes core files (`README.md`, `DESIGN.md`, `STRUCTURE.md`, `.gitignore`) and the Base Rules (`AGENTS.md`), which are injected natively into `.gemini/agents/`.
+2. **THE TOOL**: The dynamic capabilities and memory. This includes the Universal Local Memory (`.gemini/brain/` for logging and sharing context across agents) and downloaded workflows/skills (`.gemini/skills/`).
+
+### Documentation Links
+- 📖 **[The Setup Script (`AI_ONBOARDING.md`)](AI_ONBOARDING.md)** — The exact instructions your AI follows during installation, dictating how the Base and Tools are deployed.
+- 🏗️ **[The Architecture (`base/STRUCTURE.md`)](base/STRUCTURE.md)** — How files are mapped to native IDE configs.
 - 📚 **[The Actionable Index (`base/SOURCES.md`)](base/SOURCES.md)** — The database of our native skills + community tools (MCP servers, Prompts) that your AI can autonomously pull from.
 
 ---

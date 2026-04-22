@@ -34,7 +34,7 @@ While waiting for their answer, use your terminal tools to silently gather gener
 
 ---
 
-## STAGE 3: Base Setup & Dependencies
+## STAGE 3: Развертывание (Base & Tool)
 
 **Frontend (Chat):**
 1. Present a brief summary of your audit: "I found X projects. I see you are a [Profession]."
@@ -42,22 +42,37 @@ While waiting for their answer, use your terminal tools to silently gather gener
 3. Wait for the user's approval to start the deployment.
 
 **Background (Terminal):**
-Once approved, execute the following:
-1. **Global Setup**: Create `~/.ai-ecosystem/` and its subdirectories (`agents`, `workflows`, `skills`, `templates`, `knowledge`, `brain`).
-2. **Download & Copy**: Copy the core files from this repository to the global directory (e.g., `base/STRUCTURE.md`, `templates/GEMINI.md`, and specific skills/workflows based on their profession).
-3. **Dependencies**: If the user approved package installation, run `brew install`, `npm i -g`, or `pip install` for missing core tools relevant to their profession.
-4. **Project Injection (Native Routing)**: For every project found in Stage 2, you MUST deploy the ecosystem rules into the **native folders** of the tools the user selected. Do NOT force a universal folder; use what the tool natively expects:
-   - **Antigravity**: Create `.gemini/agents/` (for rules) and `.ai/brain/` (for local memory). Write `GEMINI.md`.
-   - **Cursor**: Create `.cursor/rules/` and copy the agents there as `.mdc` files. You MUST add YAML frontmatter to the top of `.mdc` files (e.g., `globs`). Write `.cursorrules` and copy `.aiignore` to `.cursorignore`.
-   - **Claude**: Write `CLAUDE.md` (use XML tags for structure if needed).
-   - **Copilot**: Create `.github/copilot-agents/` and copy rules there. Write `.github/copilot-instructions.md` using natural, conversational language.
-   - **Windsurf**: Create `.windsurf/rules/` and copy rules as `.mdc`. Write `.windsurfrules` and `.windsurfignore`.
-   - **Universal Memory**: ALL of these native files MUST include a strict rule telling the AI to read/write its project memory logs in the `.ai/brain/` folder.
-   - **Standard Templates**: If the project doesn't have them, inject `SECURITY.md`, `QA_RULES.md`, and `PRD.md` into the project root or `.ai/` folder so the AI has baseline standards.
-   - Ensure you do NOT overwrite existing project code. Only inject ecosystem rules natively.
-5. **Git Automation**: If the user approved Git setup:
-   - Run `git init`, `git add .`, `git commit -m "chore: setup AI Ecosystem"` in each project.
-   - If `gh` is installed, run `gh repo create` and push the initial commit.
-6. **Save State**: Write `~/.ai-ecosystem/settings.json` with the user's profile data.
+Once approved, execute the following setup. You must strictly follow this 2-part structure for EVERY project:
+
+### 1. THE BASE (Architecture, Files, Rules, and Native Application)
+You MUST inject the universal base from the `base/` folder into the project and apply the rules natively for Antigravity.
+
+**Base Files (Global Architecture for ALL projects):**
+- `README.md`: The main project overview.
+- `DESIGN.md`: The single source of truth for UI/UX tokens and styling.
+- `STRUCTURE.md`: Project architecture and folder standard.
+- `SOURCES.md`: External APIs, documentation links, and dependencies.
+- `PROFESSIONS_ANALYSIS.md`: Definition of specialized roles in the project.
+- `.gitignore`: Standard gitignore.
+
+**Base Rules (Native application for Antigravity):**
+- Create `.gemini/agents/` and copy `AGENTS.md` and specific agent roles there.
+- Write `GEMINI.md` to the project root for context.
+
+### 2. THE TOOL (Local Memory, Git, Skills and Workflows)
+This part configures how Antigravity maintains state and extends its capabilities natively.
+
+**Local Memory and Git (Universal Context):**
+- Create `.gemini/brain/` and `.gemini/brain/logs/` in the project.
+- Configure Git to maintain state/memory.
+- You must read/write your execution logs and knowledge here to share context between your own specialized agent personas (e.g., Architect writes backend logs, Developer reads them).
+
+**Downloading Skills and Workflows:**
+- Create `.gemini/skills/` and `.gemini/workflows/` in the project.
+- Download or copy required scripts/skills from the global `~/.gemini/antigravity/skills/` folder directly into the project based on its needs (e.g., `tech-analysis.md`, `git-hooks-qa.md`).
+
+### 3. Git & State Saving
+- Run `git init`, `git add .`, `git commit -m "chore: inject Antigravity Ecosystem Base & Tools"` in each project.
+- Write `~/.gemini/antigravity/settings.json` with the user's profile data to save global state.
 
 **Final Action**: Output a markdown summary of what was installed and announce that the ecosystem is fully configured.
