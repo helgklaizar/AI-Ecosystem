@@ -143,7 +143,7 @@ struct OnboardingWizardView: View {
         let oldProfilePath = artifactsDir + "/PROFILE.md"
         if fm.fileExists(atPath: oldProfilePath) {
             let timestamp = ISO8601DateFormatter().string(from: Date()).replacingOccurrences(of: ":", with: "-")
-            let backupPath = artifactsDir + "/PROFILE_legacy_\\(timestamp).md"
+            let backupPath = artifactsDir + "/PROFILE_legacy_\(timestamp).md"
             try? fm.copyItem(atPath: oldProfilePath, toPath: backupPath)
         }
         

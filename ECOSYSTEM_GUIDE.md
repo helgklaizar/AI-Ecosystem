@@ -41,7 +41,18 @@ Specialized personas:
 - `QA Tester` — Automated testing and edge-case discovery.
 - `DevOps` — Deployment and GitHub CI/CD setup.
 
+### 4. Core Templates (`~/.gemini/antigravity/templates/`)
+These govern project-level AI operations and context:
+- `SWARM_STATE.md` — Mandatory handover document when switching between AI agents (e.g., Backend -> Frontend).
+- `SECRETS_MAP.md` — Explains where to find environment variables locally (No hardcoding!).
+- `GEMINI.md` — Base configuration template for initializing new repos.
+
 ---
+
+## 🏗️ The Flat Global Architecture Rule
+
+**CRITICAL:** Do NOT create `.gemini/agents/` or `.gemini/skills/` folders inside individual project repositories (e.g., `PROD/my-app/.gemini/`). 
+All AI assets MUST be stored centrally in `~/.gemini/antigravity/`. This prevents version drift, avoids context fragmentation ("blind spots"), and ensures the IDE's Status Bar tools work seamlessly across all your projects.
 
 ## ⚙️ How to Clean Your System
 

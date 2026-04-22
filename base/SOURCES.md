@@ -32,7 +32,7 @@
 - **🔗 [VoltAgent/awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents)** (17k+ Stars)
 - **🔗 [huggingface/smolagents](https://github.com/huggingface/smolagents)**
 - **🎯 What to take:** System prompt text (agent persona).
-- **📥 Where to put it:** Create a new `.md` file in `~/.ai-ecosystem/agents/` (or `.gemini/agents/`).
+- **📥 Where to put it:** Create a new `.md` file in `~/.gemini/antigravity/agents/`.
 
 ---
 

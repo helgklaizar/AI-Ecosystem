@@ -22,7 +22,7 @@ You are a senior engineer on this project.
 
 ## Antigravity AI Integration
 You operate natively within the Antigravity ecosystem.
-- Use `.gemini/skills/` for technical knowledge (IDE rules, MCPs).
-- Use `.gemini/workflows/` for process guides.
-- Use `.gemini/agents/` for persona shifts.
+- Use `~/.gemini/antigravity/skills/` for technical knowledge (IDE rules, MCPs).
+- Use `~/.gemini/antigravity/global_workflows/` for process guides.
+- Use `~/.gemini/antigravity/agents/` for persona shifts.
 

@@ -19,7 +19,7 @@ This project includes a native macOS menu bar application called the **Antigravi
 **What does it do?**
 - **Native Quick Access**: Dropdown access to your local Agents, Skills, and Workflows.
 - **Ecosystem Syncing**: Automatically fetches and updates the latest workflows and skills directly from GitHub.
-- **👤 My Ecosystem Profile**: A dynamic configuration file (`PROFILE.md`) that tracks your stack and loaded skills.
+- **👤 My Ecosystem Profile**: A dynamic configuration file (`knowledge/user_ecosystem_profile/artifacts/PROFILE.md`) that tracks your stack and loaded skills.
 
 ## 🚀 First-Time Onboarding & Installation
 
