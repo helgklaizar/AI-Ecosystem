@@ -42,11 +42,16 @@ Specialized personas:
 - `QA Tester` — Automated testing and edge-case discovery.
 - `DevOps` — Deployment and GitHub CI/CD setup.
 
-### 4. Core Templates (`~/.gemini/antigravity/templates/`)
-These govern project-level AI operations and context:
+### 4. Core Templates & Swarm Orchestration (`~/.gemini/antigravity/templates/`)
+These govern project-level AI operations, context sharing, and multi-agent concurrency:
 - `SWARM_STATE.md` — Mandatory handover document when switching between AI agents (e.g., Backend -> Frontend).
 - `SECRETS_MAP.md` — Explains where to find environment variables locally (No hardcoding!).
 - `GEMINI.md` — Base configuration template for initializing new repos.
+
+#### Parallel Swarm Execution (Git Worktrees)
+When coordinating multiple agents on the same project simultaneously (e.g., one agent building the UI, another writing backend tests), we use **Git Worktrees** to prevent merge conflicts and file locking.
+- **Pattern:** `git worktree add ../feature-branch feature-branch`
+- **Execution:** Agent A operates in `/PROJECT`, Agent B operates in `/feature-branch`. They coordinate via GitHub Issues or `SWARM_STATE.md` before merging back.
 
 ---
 

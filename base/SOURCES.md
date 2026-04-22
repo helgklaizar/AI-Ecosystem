@@ -20,8 +20,10 @@
 
 ### Antigravity & Local Skills
 - **🔗 [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)** (34k+ Stars)
+- **🔗 [anthropics/skills](https://github.com/anthropics/skills)** — Official Anthropic repository for Agent Skills. High-signal, official prompts.
+- **🔗 [mgechev/skills-best-practices](https://github.com/mgechev/skills-best-practices)** — Best practices for writing professional-grade skills and maintaining lean contexts.
 - **🎯 What to take:** Markdown files (`*.md`) from the `/skills/` folder.
-- **📥 Where to put it:** Save locally in `~/.ai-ecosystem/skills/`.
+- **📥 Where to put it:** Save locally in `~/.gemini/antigravity/skills/`.
 
 ---
 
