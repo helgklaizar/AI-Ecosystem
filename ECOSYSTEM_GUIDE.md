@@ -1,0 +1,59 @@
+# 📖 ECOSYSTEM GUIDE: Essential Stack & Installation
+
+Welcome to the **AI Ecosystem Guide**. This document defines the curated list of skills, workflows, and agents that are actually useful for our development stack. We keep our environment clean by ONLY downloading what we actively use.
+
+---
+
+## 🎯 Our Tech Stack & Focus Areas
+
+Our projects typically revolve around the following technologies:
+1. **Apple Silicon Native Development**: macOS Status Bars, Swift, SwiftUI, Tauri apps.
+2. **Modern Web Development**: Next.js, React, Tailwind, and high-end animations (Framer Motion).
+3. **AI Engineering**: Local LLMs (MLX), Python backend integrations, Agent orchestration.
+4. **DevOps & QA**: Strict CI/CD pipelines, automated PR reviews, GitHub Actions.
+
+---
+
+## 📦 What to Download (The Curated List)
+
+Instead of cluttering the system with thousands of unused skills, we only use the following high-value tools. **If a tool is not on this list, do not install it by default.**
+
+### 1. Essential Global Workflows (`~/.gemini/antigravity/global_workflows/`)
+These define how our AI operates on a macro level:
+- `acceptance-orchestrator.md` — End-to-end task validation before completion.
+- `github-workflow-automation.md` — Syncing projects and managing GitHub.
+- `pr-writer.md` — Automates Pull Request creation and code review.
+- `qa-orchestrator.md` — Autonomous QA node for code quality.
+- `build-local.md` — Fast local builds, especially for desktop (Tauri/Swift) apps.
+
+### 2. High-Priority Skills (`~/.gemini/antigravity/skills/`)
+These give the AI specialized knowledge for our specific stack:
+- `swiftui-guidelines.md` & `macos-native-dev.md` — For building perfect native Mac apps.
+- `python-fastapi-development.md` — Backend standards and patterns.
+- `nextjs-app-router.md` & `frontend_best_practices.md` — For high-end UI creation.
+- `ui-taste-design.md` — Enforces premium, non-generic design principles.
+- `bash-scripting.md` — For safe, defensive shell operations.
+
+### 3. Core Agents (`~/.gemini/antigravity/agents/`)
+Specialized personas:
+- `Architect` — System design and file structure.
+- `Developer` — Clean code execution.
+- `QA Tester` — Automated testing and edge-case discovery.
+- `DevOps` — Deployment and GitHub CI/CD setup.
+
+---
+
+## ⚙️ How to Clean Your System
+
+If your `~/.gemini/antigravity/skills/` folder has thousands of files, **it's time for a purge.**
+You can ask your AI to delete everything except the core files listed above by saying:
+> *"Please clean up my local skills and workflows, leaving only the essential stack from `ECOSYSTEM_GUIDE.md`."*
+
+---
+
+## 🚀 How to Install for a New Project
+
+When setting up a new repository, do NOT copy the entire ecosystem.
+1. Run the Onboarding script (`AI_ONBOARDING.md`).
+2. The AI will read this Guide.
+3. The AI will pull **only** the relevant workflows and skills based on the specific project's needs (e.g., pulling Swift skills only for a macOS project).

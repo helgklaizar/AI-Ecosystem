@@ -289,6 +289,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         menu.addItem(makeItem("🧬 Agents", action: #selector(openAgents)))
         menu.addItem(makeItem("🛠️ Skills", action: #selector(openSkills)))
         menu.addItem(makeItem("🔀 Workflows", action: #selector(openWorkflows)))
+        menu.addItem(makeItem("📖 Ecosystem Guide", action: #selector(openEcosystemGuide)))
         menu.addItem(makeItem("🔄 Sync AI Ecosystem", action: #selector(syncEcosystem)))
 
         menu.addItem(.separator())
@@ -352,6 +353,10 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     
     @objc private func openWorkflows() {
         openInAntigravity(antigravityDir + "/global_workflows")
+    }
+
+    @objc private func openEcosystemGuide() {
+        openInAntigravity(ecosystemDir + "/ECOSYSTEM_GUIDE.md")
     }
 
     @objc private func syncEcosystem() {
