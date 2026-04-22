@@ -2,12 +2,15 @@ import SwiftUI
 
 struct OnboardingWizardView: View {
     @State private var userName: String = ""
-    @State private var usesAppleNative: Bool = false
     @State private var usesWeb: Bool = false
+    @State private var usesBackend: Bool = false
+    @State private var usesApple: Bool = false
     @State private var usesAI: Bool = false
-    @State private var usesProjectManagement: Bool = false
+    @State private var usesMobile: Bool = false
+    @State private var usesCloud: Bool = false
+    @State private var usesSecurity: Bool = false
     @State private var usesDesign: Bool = false
-    @State private var usesAutomation: Bool = false
+    @State private var usesProduct: Bool = false
     
     @State private var isConfiguring: Bool = false
     
@@ -58,15 +61,19 @@ struct OnboardingWizardView: View {
                         .font(.system(size: 13, weight: .medium))
                         .foregroundColor(.secondary)
                     
-                    ScrollView(showsIndicators: false) {
+                    ScrollView(showsIndicators: true) {
                         VStack(spacing: 12) {
-                            StackToggle(title: "Apple Native", icon: "applelogo", description: "Swift, SwiftUI, macOS apps", isOn: $usesAppleNative)
-                            StackToggle(title: "Modern Web", icon: "globe", description: "Next.js, React, Node.js", isOn: $usesWeb)
-                            StackToggle(title: "AI & Systems", icon: "brain", description: "Python, MLX, Rust", isOn: $usesAI)
-                            StackToggle(title: "Product & Strategy", icon: "chart.bar.doc.horizontal", description: "PM, Agile, Business", isOn: $usesProjectManagement)
-                            StackToggle(title: "Design & UI/UX", icon: "paintpalette", description: "Figma, Animations, Taste", isOn: $usesDesign)
-                            StackToggle(title: "Hardware & Automation", icon: "gearshape.2", description: "Robotics, Scripts, CI/CD", isOn: $usesAutomation)
+                            StackToggle(title: "Frontend & Web", icon: "globe", description: "React, Next.js, HTML/CSS", isOn: $usesWeb)
+                            StackToggle(title: "Backend & APIs", icon: "server.rack", description: "Node.js, Go, Databases", isOn: $usesBackend)
+                            StackToggle(title: "Apple Ecosystem", icon: "applelogo", description: "Swift, SwiftUI, macOS/iOS", isOn: $usesApple)
+                            StackToggle(title: "AI & Machine Learning", icon: "brain", description: "Python, LLMs, MLX", isOn: $usesAI)
+                            StackToggle(title: "Mobile Cross-Platform", icon: "apps.iphone", description: "React Native, Flutter", isOn: $usesMobile)
+                            StackToggle(title: "Cloud & DevOps", icon: "cloud", description: "AWS, Docker, CI/CD", isOn: $usesCloud)
+                            StackToggle(title: "Security & QA", icon: "lock.shield", description: "Pentest, Audits, Testing", isOn: $usesSecurity)
+                            StackToggle(title: "Design & UI/UX", icon: "paintpalette", description: "Figma, User Experience", isOn: $usesDesign)
+                            StackToggle(title: "Product & Strategy", icon: "briefcase", description: "PM, Agile, Marketing", isOn: $usesProduct)
                         }
+                        .padding(.trailing, 8)
                     }
                     .frame(maxHeight: 280)
                 }
@@ -100,7 +107,7 @@ struct OnboardingWizardView: View {
                     )
                     .foregroundColor(.white)
                     .cornerRadius(16)
-                    .disabled(isConfiguring || userName.trimmingCharacters(in: .whitespaces).isEmpty || (!usesAppleNative && !usesWeb && !usesAI && !usesProjectManagement && !usesDesign && !usesAutomation))
+                    .disabled(isConfiguring || userName.trimmingCharacters(in: .whitespaces).isEmpty || (!usesWeb && !usesBackend && !usesApple && !usesAI && !usesMobile && !usesCloud && !usesSecurity && !usesDesign && !usesProduct))
                     
                     Spacer()
                 }
@@ -143,29 +150,41 @@ struct OnboardingWizardView: View {
         var stackList = ""
         var skillsList = ""
         
-        if usesAppleNative {
+        if usesWeb {
+            stackList += "- **Frontend:** Next.js, React, HTML/CSS\\n"
+            skillsList += "- `skills/frontend/nextjs-app-router.md`\\n"
+        }
+        if usesBackend {
+            stackList += "- **Backend:** Node, Go, DBs\\n"
+            skillsList += "- `skills/backend/api-design-guidelines.md`\\n"
+        }
+        if usesApple {
             stackList += "- **Apple Native:** Swift, SwiftUI\\n"
             skillsList += "- `skills/frontend/swiftui-guidelines.md`\\n"
         }
-        if usesWeb {
-            stackList += "- **Web:** Next.js, React, Node.js\\n"
-            skillsList += "- `skills/frontend/nextjs-app-router.md`\\n"
-        }
         if usesAI {
-            stackList += "- **AI:** Python, MLX, Rust\\n"
+            stackList += "- **AI:** Python, MLX, LLMs\\n"
             skillsList += "- `skills/backend/python-fastapi-development.md`\\n"
         }
-        if usesProjectManagement {
-            stackList += "- **Product:** Strategy, Agile, Management\\n"
-            skillsList += "- `skills/business-agile/agile-workflows.md`\\n"
+        if usesMobile {
+            stackList += "- **Mobile:** React Native, Flutter\\n"
+            skillsList += "- `skills/mobile/react-native-best-practices.md`\\n"
+        }
+        if usesCloud {
+            stackList += "- **Cloud:** Docker, CI/CD\\n"
+            skillsList += "- `skills/cloud-devops/docker-compose-guide.md`\\n"
+        }
+        if usesSecurity {
+            stackList += "- **Security:** Testing, Pentest\\n"
+            skillsList += "- `skills/security/OWASP-TOP-10.md`\\n"
         }
         if usesDesign {
-            stackList += "- **Design:** UI/UX, Figma, Taste\\n"
+            stackList += "- **Design:** UI/UX, Figma\\n"
             skillsList += "- `skills/design-ui/ui-taste-design.md`\\n"
         }
-        if usesAutomation {
-            stackList += "- **Automation:** Scripts, Hardware, Robotics\\n"
-            skillsList += "- `skills/automation-tools/bash-scripting.md`\\n"
+        if usesProduct {
+            stackList += "- **Product:** Strategy, Agile\\n"
+            skillsList += "- `skills/business-agile/agile-workflows.md`\\n"
         }
         
         let profile = """
