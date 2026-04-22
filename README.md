@@ -57,10 +57,14 @@ Every project initialized by the Ecosystem follows a strict 2-part structure tai
 1. **THE BASE**: The universal foundation. This includes core files (`README.md`, `DESIGN.md`, `STRUCTURE.md`, `.gitignore`) and the Base Rules (`AGENTS.md`), which are injected natively into `.gemini/agents/`.
 2. **THE TOOL**: The dynamic capabilities and memory. This includes the Universal Local Memory (`.gemini/brain/` for logging and sharing context across agents) and downloaded workflows/skills (`.gemini/skills/`).
 
+### Native macOS Integration (Antigravity Bar)
+The ecosystem includes a native macOS menu bar app (`antigravity-bar`) that provides a quick-access UI for agents, skills, and workflows. It also acts as the ecosystem updater, allowing you to sync changes with a single click.
+
 ### Documentation Links
 - 📖 **[The Setup Script (`AI_ONBOARDING.md`)](AI_ONBOARDING.md)** — The exact instructions your AI follows during installation, dictating how the Base and Tools are deployed.
 - 🏗️ **[The Architecture (`base/STRUCTURE.md`)](base/STRUCTURE.md)** — How files are mapped to native IDE configs.
 - 📚 **[The Actionable Index (`base/SOURCES.md`)](base/SOURCES.md)** — The database of our native skills + community tools (MCP servers, Prompts) that your AI can autonomously pull from.
+- 🖥️ **[Antigravity Bar (`antigravity-bar/README.md`)](antigravity-bar/README.md)** — The native macOS status bar plugin for quick access and syncing.
 
 ---
 
